@@ -3,7 +3,7 @@
 import rclpy
 from rclpy.node import Node
 
-#Import GPIO Controls and sleep
+#Import GPIO Controls
 import RPi.GPIO as GPIO
 
 #Import Interfaces

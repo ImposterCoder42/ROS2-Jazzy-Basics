@@ -6,6 +6,17 @@ from rclpy.node import Node
 from intro_interfaces.msg import LEDState
 from intro_interfaces.srv import LEDTracker
 
+#Import GPIO Controls and sleep
+import RPi.GPIO as GPIO
+from time import sleep
+
+# Setup Pi
+cycle_counter_led = 14
+
+def setup():
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(cycle_counter_led, GPIO.OUT)
+
 class ClientLEDTracker(Node):
     def __init__(self):
         super().__init__('client_led_tracker')
@@ -37,22 +48,31 @@ class ClientLEDTracker(Node):
         try:
             response = future.result()
             if response.is_total_blinks_in_series_of_ten:
-                self.sys_cycle_blinks = 0
                 self.get_logger().info(f'Results: {response}')
+                for i in range(response.num_of_cycles_completed):
+                    self.get_logger().info(f'running sequence: {i}')
+                    GPIO.output(cycle_counter_led, GPIO.HIGH)
+                    sleep(.4)
+                    GPIO.output(cycle_counter_led, GPIO.LOW)
+                    sleep(.3)
+                self.sys_cycle_blinks = 0
         except Exception as e:
             self.get_logger().info(f'Service failed for this reason: {e},... Junk')
 
 
 # Create Main
 def main(args=None):
-    rclpy.init(args=args)
-    node = ClientLEDTracker()
+    setup()
+    try:
+        rclpy.init(args=args)
+        node = ClientLEDTracker()
 
-    rclpy.spin(node)
+        rclpy.spin(node)
 
-    node.destroy_node()
-    rclpy.shutdown()
-
+        node.destroy_node()
+        rclpy.shutdown()
+    except KeyboardInterrupt:
+        GPIO.cleanup()
 
 # Execute
 if __name__ == "__main__":
