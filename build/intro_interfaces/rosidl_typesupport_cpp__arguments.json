@@ -1,0 +1,17 @@
+{
+  "package_name": "intro_interfaces",
+  "output_dir": "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_typesupport_cpp/intro_interfaces",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_typesupport_cpp/resource",
+  "idl_tuples": [
+    "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces:msg/LEDState.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_typesupport_cpp/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
+    "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces/msg/LEDState.idl"
+  ]
+}

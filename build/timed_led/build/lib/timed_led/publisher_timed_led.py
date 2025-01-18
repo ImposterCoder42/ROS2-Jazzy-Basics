@@ -3,22 +3,25 @@ import rclpy
 from rclpy.node import Node
 
 #Import Interfaces
-from std_msgs.msg import String
+from intro_interfaces.msg import LEDState
 
 # Create Class
 class PublisherTimedLED(Node):
     def __init__(self):
         super().__init__('publisher_timed_led')
-        self.publisher_  = self.create_publisher(String, 'timed_led', 10)
-        self.led_status = 'off'
+        self.publisher_  = self.create_publisher(LEDState, 'timed_led', 10)
+        self.led_state_msg = 'off'
+        self.led_state = False
         self.create_timer(1.0, self.toggle_led_status)
 
     def toggle_led_status(self):
-        msg = String()
-        msg.data = self.led_status
+        msg = LEDState()
+        msg.new_state_msg = self.led_state_msg
+        msg.state = self.led_state
         self.publisher_.publish(msg)
-        self.get_logger().info(f'New LED Status:{self.led_status}')
-        self.led_status = 'on' if self.led_status == "off" else 'off' 
+        self.get_logger().info(f'New LED Status:{self.led_state_msg}\n${msg}')
+        self.led_state_msg = 'on' if self.led_state_msg == "off" else 'off'
+        self.led_state = not self.led_state
         
 
 

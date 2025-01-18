@@ -1,0 +1,2 @@
+string new_state_msg
+bool state

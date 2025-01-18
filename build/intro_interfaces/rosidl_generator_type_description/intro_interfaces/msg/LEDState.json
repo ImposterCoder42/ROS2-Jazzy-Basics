@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "intro_interfaces/msg/LEDState",
+      "fields": [
+        {
+          "name": "new_state_msg",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "state",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "intro_interfaces/msg/LEDState",
+      "hash_string": "RIHS01_30720e50227d5e7c623af1fc8ff7de95a19fedc07ef6fc7f8d4ea79ccd147dbd"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+[0.063s] Invoking command in '/home/optimus/first_ros2_ws/build/intro_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/optimus/first_ros2_ws/src/intro_interfaces -DCMAKE_INSTALL_PREFIX=/home/optimus/first_ros2_ws/install/intro_interfaces
+[1.108s] -- The C compiler identification is GNU 13.3.0
+[1.973s] -- The CXX compiler identification is GNU 13.3.0
+[2.089s] -- Detecting C compiler ABI info
+[2.645s] -- Detecting C compiler ABI info - done
+[2.680s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.682s] -- Detecting C compile features
+[2.685s] -- Detecting C compile features - done
+[2.742s] -- Detecting CXX compiler ABI info
+[3.287s] -- Detecting CXX compiler ABI info - done
+[3.324s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.325s] -- Detecting CXX compile features
+[3.327s] -- Detecting CXX compile features - done
+[3.377s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.158s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.934s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[4.998s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.511s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.905s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[5.921s] [31mCMake Error at CMakeLists.txt:14 (rosidl_default_interfaces):
+[5.921s]   Unknown CMake command "rosidl_default_interfaces".
+[5.922s] 
+[5.923s] [0m
+[5.924s] -- Configuring incomplete, errors occurred!
+[5.942s] Invoked command in '/home/optimus/first_ros2_ws/build/intro_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/optimus/first_ros2_ws/src/intro_interfaces -DCMAKE_INSTALL_PREFIX=/home/optimus/first_ros2_ws/install/intro_interfaces
