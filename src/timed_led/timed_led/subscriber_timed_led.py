@@ -27,10 +27,10 @@ class SubsciberTimedLED(Node):
     def toggle_led_state(self,msg):
         if msg.state:
             self.get_logger().warn(f'Turning LED {msg.new_state_msg}...') # insert GPIO Call
-            # GPIO.output(timed_blink_led, GPIO.HIGH)
+            GPIO.output(timed_blink_led, GPIO.HIGH)
         else:
             self.get_logger().info(f'Turning LED {msg.new_state_msg}...') # Move logger out of If Statement
-            # GPIO.output(timed_blink_led, GPIO.LOW)
+            GPIO.output(timed_blink_led, GPIO.LOW)
 
 
 

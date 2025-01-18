@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "intro_interfaces/srv/LEDTracker_Response",
+      "fields": [
+        {
+          "name": "num_of_cycles_completed",
+          "type": {
+            "type_id": 8,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": "0"
+        },
+        {
+          "name": "is_total_blinks_in_series_of_ten",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": "False"
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "intro_interfaces/srv/LEDTracker_Response",
+      "hash_string": "RIHS01_889f2376b5a00e7c8a1df48929a1401e2c01196aa4c11c207f6a10ce4b99d843"
+    }
+  ]
+}

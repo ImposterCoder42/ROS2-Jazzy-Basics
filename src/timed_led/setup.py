@@ -22,6 +22,8 @@ setup(
         'console_scripts': [
             'led_timer = timed_led.publisher_timed_led:main',
             'timed_led = timed_led.subscriber_timed_led:main',
+            'server_led_tracker = timed_led.service_led_tracker:main',
+            'client_led_tracker = timed_led.client_led_tracker:main',
         ],
     },
 )

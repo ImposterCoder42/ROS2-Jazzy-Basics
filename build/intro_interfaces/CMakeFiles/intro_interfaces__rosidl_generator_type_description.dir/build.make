@@ -67,15 +67,21 @@ include CMakeFiles/intro_interfaces__rosidl_generator_type_description.dir/compi
 include CMakeFiles/intro_interfaces__rosidl_generator_type_description.dir/progress.make
 
 CMakeFiles/intro_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/intro_interfaces/msg/LEDState.json
+CMakeFiles/intro_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/intro_interfaces/srv/LEDTracker.json
 
 rosidl_generator_type_description/intro_interfaces/msg/LEDState.json: /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description
 rosidl_generator_type_description/intro_interfaces/msg/LEDState.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
 rosidl_generator_type_description/intro_interfaces/msg/LEDState.json: rosidl_adapter/intro_interfaces/msg/LEDState.idl
+rosidl_generator_type_description/intro_interfaces/msg/LEDState.json: rosidl_adapter/intro_interfaces/srv/LEDTracker.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/optimus/first_ros2_ws/build/intro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
 	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description__arguments.json
 
+rosidl_generator_type_description/intro_interfaces/srv/LEDTracker.json: rosidl_generator_type_description/intro_interfaces/msg/LEDState.json
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/intro_interfaces/srv/LEDTracker.json
+
 intro_interfaces__rosidl_generator_type_description: CMakeFiles/intro_interfaces__rosidl_generator_type_description
 intro_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/intro_interfaces/msg/LEDState.json
+intro_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/intro_interfaces/srv/LEDTracker.json
 intro_interfaces__rosidl_generator_type_description: CMakeFiles/intro_interfaces__rosidl_generator_type_description.dir/build.make
 .PHONY : intro_interfaces__rosidl_generator_type_description
 

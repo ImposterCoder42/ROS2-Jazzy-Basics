@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "intro_interfaces/msg/detail/led_state__type_support.h"
 #include "intro_interfaces/msg/detail/led_state__struct.h"
 #include "intro_interfaces/msg/detail/led_state__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

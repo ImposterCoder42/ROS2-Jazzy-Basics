@@ -1,0 +1,28 @@
+[3.750s] Invoking command in '/home/optimus/first_ros2_ws/src/timed_led': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/optimus/first_ros2_ws/build/timed_led/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/timed_led build --build-base /home/optimus/first_ros2_ws/build/timed_led/build install --record /home/optimus/first_ros2_ws/build/timed_led/install.log --single-version-externally-managed install_data
+[4.994s] running egg_info
+[5.082s] writing ../../build/timed_led/timed_led.egg-info/PKG-INFO
+[5.083s] writing dependency_links to ../../build/timed_led/timed_led.egg-info/dependency_links.txt
+[5.094s] writing entry points to ../../build/timed_led/timed_led.egg-info/entry_points.txt
+[5.105s] writing requirements to ../../build/timed_led/timed_led.egg-info/requires.txt
+[5.115s] writing top-level names to ../../build/timed_led/timed_led.egg-info/top_level.txt
+[5.381s] reading manifest file '../../build/timed_led/timed_led.egg-info/SOURCES.txt'
+[5.385s] adding license file 'LICENSE'
+[5.392s] writing manifest file '../../build/timed_led/timed_led.egg-info/SOURCES.txt'
+[5.393s] running build
+[5.399s] running build_py
+[5.399s] copying timed_led/service_led_tracker.py -> /home/optimus/first_ros2_ws/build/timed_led/build/lib/timed_led
+[5.407s] running install
+[5.445s] running install_lib
+[5.702s] copying /home/optimus/first_ros2_ws/build/timed_led/build/lib/timed_led/service_led_tracker.py -> /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led
+[5.710s] byte-compiling /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led/service_led_tracker.py to service_led_tracker.cpython-312.pyc
+[5.726s] running install_data
+[5.732s] running install_egg_info
+[5.849s] removing '/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led-0.0.0-py3.12.egg-info' (and everything under it)
+[5.851s] Copying ../../build/timed_led/timed_led.egg-info to /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led-0.0.0-py3.12.egg-info
+[5.858s] running install_scripts
+[6.737s] Installing client_led_tracker script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led
+[6.738s] Installing led_timer script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led
+[6.743s] Installing server_led_tracker script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led
+[6.759s] Installing timed_led script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led
+[6.765s] writing list of installed files to '/home/optimus/first_ros2_ws/build/timed_led/install.log'
+[6.924s] Invoked command in '/home/optimus/first_ros2_ws/src/timed_led' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/optimus/first_ros2_ws/build/timed_led/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/timed_led build --build-base /home/optimus/first_ros2_ws/build/timed_led/build install --record /home/optimus/first_ros2_ws/build/timed_led/install.log --single-version-externally-managed install_data

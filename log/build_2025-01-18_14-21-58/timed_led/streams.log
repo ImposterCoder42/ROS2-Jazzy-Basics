@@ -1,0 +1,31 @@
+[3.855s] Invoking command in '/home/optimus/first_ros2_ws/src/timed_led': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/optimus/first_ros2_ws/build/timed_led/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/timed_led build --build-base /home/optimus/first_ros2_ws/build/timed_led/build install --record /home/optimus/first_ros2_ws/build/timed_led/install.log --single-version-externally-managed install_data
+[5.118s] running egg_info
+[5.218s] writing ../../build/timed_led/timed_led.egg-info/PKG-INFO
+[5.221s] writing dependency_links to ../../build/timed_led/timed_led.egg-info/dependency_links.txt
+[5.223s] writing entry points to ../../build/timed_led/timed_led.egg-info/entry_points.txt
+[5.224s] writing requirements to ../../build/timed_led/timed_led.egg-info/requires.txt
+[5.224s] writing top-level names to ../../build/timed_led/timed_led.egg-info/top_level.txt
+[5.425s] reading manifest file '../../build/timed_led/timed_led.egg-info/SOURCES.txt'
+[5.427s] adding license file 'LICENSE'
+[5.429s] writing manifest file '../../build/timed_led/timed_led.egg-info/SOURCES.txt'
+[5.430s] running build
+[5.430s] running build_py
+[5.431s] copying timed_led/client_led_tracker.py -> /home/optimus/first_ros2_ws/build/timed_led/build/lib/timed_led
+[5.432s] copying timed_led/service_led_tracker.py -> /home/optimus/first_ros2_ws/build/timed_led/build/lib/timed_led
+[5.434s] running install
+[5.459s] running install_lib
+[5.556s] copying /home/optimus/first_ros2_ws/build/timed_led/build/lib/timed_led/client_led_tracker.py -> /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led
+[5.557s] copying /home/optimus/first_ros2_ws/build/timed_led/build/lib/timed_led/service_led_tracker.py -> /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led
+[5.560s] byte-compiling /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led/client_led_tracker.py to client_led_tracker.cpython-312.pyc
+[5.564s] byte-compiling /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led/service_led_tracker.py to service_led_tracker.cpython-312.pyc
+[5.567s] running install_data
+[5.568s] running install_egg_info
+[5.670s] removing '/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led-0.0.0-py3.12.egg-info' (and everything under it)
+[5.672s] Copying ../../build/timed_led/timed_led.egg-info to /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led-0.0.0-py3.12.egg-info
+[5.680s] running install_scripts
+[6.405s] Installing client_led_tracker script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led
+[6.407s] Installing led_timer script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led
+[6.408s] Installing server_led_tracker script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led
+[6.410s] Installing timed_led script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led
+[6.412s] writing list of installed files to '/home/optimus/first_ros2_ws/build/timed_led/install.log'
+[6.601s] Invoked command in '/home/optimus/first_ros2_ws/src/timed_led' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/optimus/first_ros2_ws/build/timed_led/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/timed_led build --build-base /home/optimus/first_ros2_ws/build/timed_led/build install --record /home/optimus/first_ros2_ws/build/timed_led/install.log --single-version-externally-managed install_data

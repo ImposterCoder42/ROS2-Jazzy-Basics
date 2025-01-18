@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "intro_interfaces/srv/LEDTracker_Request",
+      "fields": [
+        {
+          "name": "num_of_sys_blinks",
+          "type": {
+            "type_id": 8,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "led_state",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "intro_interfaces/srv/LEDTracker_Request",
+      "hash_string": "RIHS01_031783d7e59404fc5218d10e7211e8759b66bff2cc8264f1205c571a6b07f44d"
+    }
+  ]
+}

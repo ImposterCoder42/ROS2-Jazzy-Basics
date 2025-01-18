@@ -1,0 +1,5 @@
+int64 num_of_sys_blinks
+bool led_state
+---
+int64 num_of_cycles_completed 0
+bool is_total_blinks_in_series_of_ten false

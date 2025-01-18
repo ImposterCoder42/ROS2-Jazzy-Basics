@@ -1,6 +1,7 @@
 {
   "package_name": "intro_interfaces",
   "non_idl_tuples": [
-    "/home/optimus/first_ros2_ws/src/intro_interfaces:msg/LEDState.msg"
+    "/home/optimus/first_ros2_ws/src/intro_interfaces:msg/LEDState.msg",
+    "/home/optimus/first_ros2_ws/src/intro_interfaces:srv/LEDTracker.srv"
   ]
 }

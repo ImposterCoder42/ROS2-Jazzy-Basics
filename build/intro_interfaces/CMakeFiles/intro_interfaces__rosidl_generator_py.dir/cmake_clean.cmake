@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/intro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/intro_interfaces/msg/_led_state_s.c.o"
   "CMakeFiles/intro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/intro_interfaces/msg/_led_state_s.c.o.d"
+  "CMakeFiles/intro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/intro_interfaces/srv/_led_tracker_s.c.o"
+  "CMakeFiles/intro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/intro_interfaces/srv/_led_tracker_s.c.o.d"
   "libintro_interfaces__rosidl_generator_py.pdb"
   "libintro_interfaces__rosidl_generator_py.so"
 )

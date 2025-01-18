@@ -5,6 +5,9 @@ file(REMOVE_RECURSE
   "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/msg/__init__.py"
   "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/msg/_led_state.py"
   "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/msg/_led_state_s.c"
+  "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/srv/__init__.py"
+  "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/srv/_led_tracker.py"
+  "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/srv/_led_tracker_s.c"
   "CMakeFiles/intro_interfaces__py"
 )
 

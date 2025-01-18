@@ -19,7 +19,7 @@ class PublisherTimedLED(Node):
         msg.new_state_msg = self.led_state_msg
         msg.state = self.led_state
         self.publisher_.publish(msg)
-        self.get_logger().info(f'New LED Status:{self.led_state_msg}\n${msg}')
+        self.get_logger().info(f'New LED Status:{self.led_state_msg}')
         self.led_state_msg = 'on' if self.led_state_msg == "off" else 'off'
         self.led_state = not self.led_state
         

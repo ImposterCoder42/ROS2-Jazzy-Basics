@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from intro_interfaces/srv/LEDTracker.srv
+// generated code does not contain a copyright notice
+
+
+module intro_interfaces {
+  module srv {
+    struct LEDTracker_Request {
+      int64 num_of_sys_blinks;
+
+      boolean led_state;
+    };
+    struct LEDTracker_Response {
+      @default (value=0)
+      int64 num_of_cycles_completed;
+
+      @default (value=FALSE)
+      boolean is_total_blinks_in_series_of_ten;
+    };
+  };
+};
