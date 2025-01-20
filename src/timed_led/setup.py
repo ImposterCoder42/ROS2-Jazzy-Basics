@@ -24,6 +24,7 @@ setup(
             'timed_led = timed_led.subscriber_timed_led:main',
             'server_led_tracker = timed_led.service_led_tracker:main',
             'client_led_tracker = timed_led.client_led_tracker:main',
+            'led_action_server = timed_led.led_action_server:main',
         ],
     },
 )

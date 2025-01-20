@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from intro_interfaces/action/ToggleLED.action
+// generated code does not contain a copyright notice
+
+
+module intro_interfaces {
+  module action {
+    struct ToggleLED_Goal {
+      boolean state;
+    };
+    struct ToggleLED_Result {
+      boolean is_complete;
+    };
+    struct ToggleLED_Feedback {
+      int64 current_duty_cycle;
+    };
+  };
+};

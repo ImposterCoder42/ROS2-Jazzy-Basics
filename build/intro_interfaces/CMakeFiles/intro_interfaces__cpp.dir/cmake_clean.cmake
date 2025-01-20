@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/intro_interfaces__cpp"
+  "rosidl_generator_cpp/intro_interfaces/action/detail/toggle_led__builder.hpp"
+  "rosidl_generator_cpp/intro_interfaces/action/detail/toggle_led__struct.hpp"
+  "rosidl_generator_cpp/intro_interfaces/action/detail/toggle_led__traits.hpp"
+  "rosidl_generator_cpp/intro_interfaces/action/detail/toggle_led__type_support.hpp"
+  "rosidl_generator_cpp/intro_interfaces/action/toggle_led.hpp"
   "rosidl_generator_cpp/intro_interfaces/msg/detail/led_state__builder.hpp"
   "rosidl_generator_cpp/intro_interfaces/msg/detail/led_state__struct.hpp"
   "rosidl_generator_cpp/intro_interfaces/msg/detail/led_state__traits.hpp"

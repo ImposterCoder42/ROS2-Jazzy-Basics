@@ -1,0 +1,5 @@
+  File "/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led/led_action_server.py", line 24
+    self.current_duty_cycle =+ i if self.led_state else self.current_duty_cycle =- i
+    ^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot assign to attribute here. Maybe you meant '==' instead of '='?
+

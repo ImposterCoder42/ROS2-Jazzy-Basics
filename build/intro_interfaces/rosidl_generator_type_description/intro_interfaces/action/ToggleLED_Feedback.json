@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "intro_interfaces/action/ToggleLED_Feedback",
+      "fields": [
+        {
+          "name": "current_duty_cycle",
+          "type": {
+            "type_id": 8,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_Feedback",
+      "hash_string": "RIHS01_543c4d1fe0b65eb8fbc02825a3eaffd39eca6215f82230c5ee156eb822b32770"
+    }
+  ]
+}

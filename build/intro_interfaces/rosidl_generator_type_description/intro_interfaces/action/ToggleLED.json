@@ -1,0 +1,522 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "intro_interfaces/action/ToggleLED",
+      "fields": [
+        {
+          "name": "goal",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "intro_interfaces/action/ToggleLED_Goal"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "intro_interfaces/action/ToggleLED_Result"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "intro_interfaces/action/ToggleLED_Feedback"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "send_goal_service",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "intro_interfaces/action/ToggleLED_SendGoal"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "get_result_service",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "intro_interfaces/action/ToggleLED_GetResult"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback_message",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "intro_interfaces/action/ToggleLED_FeedbackMessage"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "builtin_interfaces/msg/Time",
+        "fields": [
+          {
+            "name": "sec",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "nanosec",
+            "type": {
+              "type_id": 7,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_Feedback",
+        "fields": [
+          {
+            "name": "current_duty_cycle",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_FeedbackMessage",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "feedback",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_Feedback"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_GetResult",
+        "fields": [
+          {
+            "name": "request_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_GetResult_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_GetResult_Response"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "event_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_GetResult_Event"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_GetResult_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_GetResult_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_GetResult_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_GetResult_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_GetResult_Response",
+        "fields": [
+          {
+            "name": "status",
+            "type": {
+              "type_id": 2,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "result",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_Result"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_Goal",
+        "fields": [
+          {
+            "name": "state",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_Result",
+        "fields": [
+          {
+            "name": "is_complete",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_SendGoal",
+        "fields": [
+          {
+            "name": "request_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_SendGoal_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_SendGoal_Response"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "event_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_SendGoal_Event"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_SendGoal_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_SendGoal_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_SendGoal_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_SendGoal_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "goal",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "intro_interfaces/action/ToggleLED_Goal"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_SendGoal_Response",
+        "fields": [
+          {
+            "name": "accepted",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "service_msgs/msg/ServiceEventInfo",
+        "fields": [
+          {
+            "name": "event_type",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "client_gid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "sequence_number",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "unique_identifier_msgs/msg/UUID",
+        "fields": [
+          {
+            "name": "uuid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "intro_interfaces/action/ToggleLED",
+      "hash_string": "RIHS01_f291f42e3ab1208f1302efd7e19ff1e3422282e9cf928dfe92282c0d46ec7d1a"
+    },
+    {
+      "type_name": "builtin_interfaces/msg/Time",
+      "hash_string": "RIHS01_b106235e25a4c5ed35098aa0a61a3ee9c9b18d197f398b0e4206cea9acf9c197"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_Feedback",
+      "hash_string": "RIHS01_543c4d1fe0b65eb8fbc02825a3eaffd39eca6215f82230c5ee156eb822b32770"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_FeedbackMessage",
+      "hash_string": "RIHS01_07d6d4fb263c634551cf1b525985fbbbb30e5e245749c7ff8d8944b0dbc1d94a"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_GetResult",
+      "hash_string": "RIHS01_9face0f5d20970b74a1431d9111443928542d1c8ae1c1ee2592e576630c89629"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_GetResult_Event",
+      "hash_string": "RIHS01_7d356fbd3f2bd5f3cd9fdfc1bfa33d4a346bb53f4097c7226634c40c91c28ec6"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_GetResult_Request",
+      "hash_string": "RIHS01_0e2f52ce150efb3af678c6376128a7fe0c4b9631fd0aa581fac864341fa6f716"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_GetResult_Response",
+      "hash_string": "RIHS01_0a99e30168bc0a358da7ff7b2b3c8acb87e9fae9b3b1176f465a535983f38a59"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_Goal",
+      "hash_string": "RIHS01_498a7f8660cf44ce152db53e8f90464f8cdf9007d826578a2adce306c04b4f92"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_Result",
+      "hash_string": "RIHS01_3f0d733ccf646d5157cfde6b377988bcb90273306c3ae4ac59b6afa0ff795d71"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_SendGoal",
+      "hash_string": "RIHS01_5cfab23cddf71652413c9c97e9cf46b62cecbe13047261a8795e1dbcf1479936"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_SendGoal_Event",
+      "hash_string": "RIHS01_88d17b169ec8284daed83c8b05aa6dbd5d805304748907d32509c8250556d413"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_SendGoal_Request",
+      "hash_string": "RIHS01_646c382960aa85b620ced04accb0d7884a75327bc75d30524311ade5e83b0b3b"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_SendGoal_Response",
+      "hash_string": "RIHS01_fb20d63d8bbf6840b214430024f77b7d4ab0c6ad49bab0b52d9015cd5ea16d46"
+    },
+    {
+      "type_name": "service_msgs/msg/ServiceEventInfo",
+      "hash_string": "RIHS01_41bcbbe07a75c9b52bc96bfd5c24d7f0fc0a08c0cb7921b3373c5732345a6f45"
+    },
+    {
+      "type_name": "unique_identifier_msgs/msg/UUID",
+      "hash_string": "RIHS01_1b8e8aca958cbea28fe6ef60bf6c19b683c97a9ef60bb34752067d0f2f7ab437"
+    }
+  ]
+}

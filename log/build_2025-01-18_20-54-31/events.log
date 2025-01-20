@@ -1,0 +1,104 @@
+[0.000000] (-) TimerEvent: {}
+[0.000962] (-) JobUnselected: {'identifier': 'intro_interfaces'}
+[0.001795] (timed_led) JobQueued: {'identifier': 'timed_led', 'dependencies': OrderedDict()}
+[0.002283] (timed_led) JobStarted: {'identifier': 'timed_led'}
+[0.099241] (-) TimerEvent: {}
+[0.199943] (-) TimerEvent: {}
+[0.300605] (-) TimerEvent: {}
+[0.401222] (-) TimerEvent: {}
+[0.501866] (-) TimerEvent: {}
+[0.602495] (-) TimerEvent: {}
+[0.703077] (-) TimerEvent: {}
+[0.803703] (-) TimerEvent: {}
+[0.904386] (-) TimerEvent: {}
+[1.005968] (-) TimerEvent: {}
+[1.106876] (-) TimerEvent: {}
+[1.207731] (-) TimerEvent: {}
+[1.308295] (-) TimerEvent: {}
+[1.408918] (-) TimerEvent: {}
+[1.509561] (-) TimerEvent: {}
+[1.610185] (-) TimerEvent: {}
+[1.713529] (-) TimerEvent: {}
+[1.814680] (-) TimerEvent: {}
+[1.915374] (-) TimerEvent: {}
+[2.015967] (-) TimerEvent: {}
+[2.116963] (-) TimerEvent: {}
+[2.217595] (-) TimerEvent: {}
+[2.318194] (-) TimerEvent: {}
+[2.418787] (-) TimerEvent: {}
+[2.519394] (-) TimerEvent: {}
+[2.619999] (-) TimerEvent: {}
+[2.720719] (-) TimerEvent: {}
+[2.821386] (-) TimerEvent: {}
+[2.922032] (-) TimerEvent: {}
+[3.022647] (-) TimerEvent: {}
+[3.123201] (-) TimerEvent: {}
+[3.223873] (-) TimerEvent: {}
+[3.324448] (-) TimerEvent: {}
+[3.425013] (-) TimerEvent: {}
+[3.525635] (-) TimerEvent: {}
+[3.626215] (-) TimerEvent: {}
+[3.726852] (-) TimerEvent: {}
+[3.827642] (-) TimerEvent: {}
+[3.925430] (timed_led) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/timed_led', 'build', '--build-base', '/home/optimus/first_ros2_ws/build/timed_led/build', 'install', '--record', '/home/optimus/first_ros2_ws/build/timed_led/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/optimus/first_ros2_ws/src/timed_led', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'optimus', 'SSH_CLIENT': '192.168.1.29 54047 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/helpers/browser.sh', 'HOME': '/home/optimus', 'OLDPWD': '/home/optimus/first_ros2_ws/src/timed_led/timed_led', 'TERM_PROGRAM_VERSION': '1.96.4', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-d091048a-cf96-46c4-b7f9-64aa593b175b.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'optimus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2da300286c.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/optimus/first_ros2_ws/build/timed_led', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.29 54047 192.168.1.48 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/optimus/first_ros2_ws/build/timed_led/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[3.933761] (-) TimerEvent: {}
+[4.034576] (-) TimerEvent: {}
+[4.135179] (-) TimerEvent: {}
+[4.235798] (-) TimerEvent: {}
+[4.336410] (-) TimerEvent: {}
+[4.437033] (-) TimerEvent: {}
+[4.537807] (-) TimerEvent: {}
+[4.638407] (-) TimerEvent: {}
+[4.738961] (-) TimerEvent: {}
+[4.839571] (-) TimerEvent: {}
+[4.940133] (-) TimerEvent: {}
+[5.040739] (-) TimerEvent: {}
+[5.141376] (-) TimerEvent: {}
+[5.149892] (timed_led) StdoutLine: {'line': b'running egg_info\n'}
+[5.239822] (timed_led) StdoutLine: {'line': b'writing ../../build/timed_led/timed_led.egg-info/PKG-INFO\n'}
+[5.241017] (timed_led) StdoutLine: {'line': b'writing dependency_links to ../../build/timed_led/timed_led.egg-info/dependency_links.txt\n'}
+[5.241614] (-) TimerEvent: {}
+[5.243441] (timed_led) StdoutLine: {'line': b'writing entry points to ../../build/timed_led/timed_led.egg-info/entry_points.txt\n'}
+[5.245070] (timed_led) StdoutLine: {'line': b'writing requirements to ../../build/timed_led/timed_led.egg-info/requires.txt\n'}
+[5.246377] (timed_led) StdoutLine: {'line': b'writing top-level names to ../../build/timed_led/timed_led.egg-info/top_level.txt\n'}
+[5.341792] (-) TimerEvent: {}
+[5.442413] (-) TimerEvent: {}
+[5.463202] (timed_led) StdoutLine: {'line': b"reading manifest file '../../build/timed_led/timed_led.egg-info/SOURCES.txt'\n"}
+[5.464824] (timed_led) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[5.467152] (timed_led) StdoutLine: {'line': b"writing manifest file '../../build/timed_led/timed_led.egg-info/SOURCES.txt'\n"}
+[5.467868] (timed_led) StdoutLine: {'line': b'running build\n'}
+[5.468358] (timed_led) StdoutLine: {'line': b'running build_py\n'}
+[5.470155] (timed_led) StdoutLine: {'line': b'copying timed_led/led_action_server.py -> /home/optimus/first_ros2_ws/build/timed_led/build/lib/timed_led\n'}
+[5.472142] (timed_led) StdoutLine: {'line': b'running install\n'}
+[5.497168] (timed_led) StdoutLine: {'line': b'running install_lib\n'}
+[5.542579] (-) TimerEvent: {}
+[5.589852] (timed_led) StdoutLine: {'line': b'copying /home/optimus/first_ros2_ws/build/timed_led/build/lib/timed_led/led_action_server.py -> /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led\n'}
+[5.593248] (timed_led) StdoutLine: {'line': b'byte-compiling /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led/led_action_server.py to led_action_server.cpython-312.pyc\n'}
+[5.595380] (timed_led) StderrLine: {'line': b'  File "/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led/led_action_server.py", line 24\n'}
+[5.596122] (timed_led) StderrLine: {'line': b'    self.current_duty_cycle =+ i if self.led_state else self.current_duty_cycle =- i\n'}
+[5.597822] (timed_led) StderrLine: {'line': b'    ^^^^^^^^^^^^^^^^^^^^^^^\n'}
+[5.598269] (timed_led) StderrLine: {'line': b"SyntaxError: cannot assign to attribute here. Maybe you meant '==' instead of '='?\n"}
+[5.598723] (timed_led) StderrLine: {'line': b'\n'}
+[5.599083] (timed_led) StdoutLine: {'line': b'running install_data\n'}
+[5.599503] (timed_led) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.642713] (-) TimerEvent: {}
+[5.691826] (timed_led) StdoutLine: {'line': b"removing '/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[5.693736] (timed_led) StdoutLine: {'line': b'Copying ../../build/timed_led/timed_led.egg-info to /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led-0.0.0-py3.12.egg-info\n'}
+[5.701246] (timed_led) StdoutLine: {'line': b'running install_scripts\n'}
+[5.742882] (-) TimerEvent: {}
+[5.843536] (-) TimerEvent: {}
+[5.944192] (-) TimerEvent: {}
+[6.044806] (-) TimerEvent: {}
+[6.145400] (-) TimerEvent: {}
+[6.245975] (-) TimerEvent: {}
+[6.346587] (-) TimerEvent: {}
+[6.385438] (timed_led) StdoutLine: {'line': b'Installing client_led_tracker script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[6.386394] (timed_led) StdoutLine: {'line': b'Installing led_timer script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[6.387430] (timed_led) StdoutLine: {'line': b'Installing server_led_tracker script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[6.388595] (timed_led) StdoutLine: {'line': b'Installing timed_led script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[6.390649] (timed_led) StdoutLine: {'line': b"writing list of installed files to '/home/optimus/first_ros2_ws/build/timed_led/install.log'\n"}
+[6.446869] (-) TimerEvent: {}
+[6.537729] (timed_led) CommandEnded: {'returncode': 0}
+[6.547889] (-) TimerEvent: {}
+[6.585908] (timed_led) JobEnded: {'identifier': 'timed_led', 'rc': 0}
+[6.589145] (-) EventReactorShutdown: {}

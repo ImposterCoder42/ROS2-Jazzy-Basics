@@ -1,5 +1,6 @@
 [console_scripts]
 client_led_tracker = timed_led.client_led_tracker:main
+led_action_server = timed_led.led_action_server:main
 led_timer = timed_led.publisher_timed_led:main
 server_led_tracker = timed_led.service_led_tracker:main
 timed_led = timed_led.subscriber_timed_led:main

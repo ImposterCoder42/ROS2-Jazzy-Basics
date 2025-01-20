@@ -1,0 +1,56 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "intro_interfaces/action/ToggleLED_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "intro_interfaces/action/ToggleLED_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "intro_interfaces/action/ToggleLED_Result",
+        "fields": [
+          {
+            "name": "is_complete",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_GetResult_Response",
+      "hash_string": "RIHS01_0a99e30168bc0a358da7ff7b2b3c8acb87e9fae9b3b1176f465a535983f38a59"
+    },
+    {
+      "type_name": "intro_interfaces/action/ToggleLED_Result",
+      "hash_string": "RIHS01_3f0d733ccf646d5157cfde6b377988bcb90273306c3ae4ac59b6afa0ff795d71"
+    }
+  ]
+}

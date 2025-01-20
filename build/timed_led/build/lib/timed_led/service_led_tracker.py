@@ -9,7 +9,7 @@ class ServiceLEDTracker(Node):
     def __init__(self):
         super().__init__('server_led_tracker')
         self.srv_ = self.create_service(LEDTracker, 'track_sys_blinks', self.track_total_sys_blinks)
-        self.total_sys_cycles = -1 # <- this because 0 % 10 = 0 and I want it to fire on the off state
+        self.total_sys_cycles = 0
 
     def track_total_sys_blinks(self,req,res):
         if not req.led_state:

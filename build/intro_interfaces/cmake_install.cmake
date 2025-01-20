@@ -55,6 +55,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/action" TYPE FILE FILES "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/action/ToggleLED.json")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/intro_interfaces/intro_interfaces" TYPE DIRECTORY FILES "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_c/intro_interfaces/" REGEX "/[^/]*\\.h$")
 endif()
 
@@ -375,11 +379,19 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/action" TYPE FILE FILES "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces/action/ToggleLED.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/msg" TYPE FILE FILES "/home/optimus/first_ros2_ws/src/intro_interfaces/msg/LEDState.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/srv" TYPE FILE FILES "/home/optimus/first_ros2_ws/src/intro_interfaces/srv/LEDTracker.srv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/action" TYPE FILE FILES "/home/optimus/first_ros2_ws/src/intro_interfaces/action/ToggleLED.action")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
