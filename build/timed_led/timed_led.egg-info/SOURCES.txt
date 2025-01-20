@@ -15,6 +15,7 @@ test/test_flake8.py
 test/test_pep257.py
 timed_led/__init__.py
 timed_led/client_led_tracker.py
+timed_led/led_action_client.py
 timed_led/led_action_server.py
 timed_led/publisher_timed_led.py
 timed_led/service_led_tracker.py

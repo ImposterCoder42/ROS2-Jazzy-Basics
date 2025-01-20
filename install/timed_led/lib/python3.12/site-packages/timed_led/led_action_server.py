@@ -33,13 +33,11 @@ class LEDActionServer(Node):
             self.get_logger().info(f'Current Duty Cycle: {feedback_msg.current_duty_cycle}')
             goal_handle.publish_feedback(feedback_msg)
             sleep(.1)
-
         
         self.current_led_state = goal_handle.request.state
 
         goal_handle.succeed()
         
-
         result = ToggleLED.Result()
         result.is_complete = True
         return result
