@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="timed_led" exec="led_timer" name="led_timer" />
+    <node pkg="timed_led" exec="timed_led" name="timed_led" />
+</launch>

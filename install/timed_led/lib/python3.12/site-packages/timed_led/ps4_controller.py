@@ -9,7 +9,7 @@ from intro_interfaces.srv import SlowLEDToggle
 class PS4Controls(Node, Controller):
     def __init__(self, **kwargs):
         Controller.__init__(self, **kwargs)
-        super().__init__('ps4_controls')
+        super().__init__('imposter_coding')
         self.slow_led_next_state = True
 
     def on_x_press(self):
@@ -51,6 +51,7 @@ def main(args=None):
     rclpy.init(args=args)
     node = PS4Controller()
     rclpy.spin(node)
+    node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == "__main__":

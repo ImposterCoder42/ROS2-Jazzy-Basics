@@ -9,6 +9,7 @@ setup.py
 ../../build/timed_led/timed_led.egg-info/requires.txt
 ../../build/timed_led/timed_led.egg-info/top_level.txt
 ../../build/timed_led/timed_led.egg-info/zip-safe
+launch/main_launch._launch.xml
 resource/timed_led
 test/test_copyright.py
 test/test_flake8.py

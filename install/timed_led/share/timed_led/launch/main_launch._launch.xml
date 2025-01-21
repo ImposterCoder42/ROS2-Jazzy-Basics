@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="timed_led" exec="led_timer" name="led_timer" />
+    <node pkg="timed_led" exec="timed_led" name="timed_led" />
+    <node pkg="timed_led" exec="server_led_tracker" name="server_led_tracker" />
+    <node pkg="timed_led" exec="client_led_tracker" name="client_led_tracker" />
+    <node pkg="timed_led" exec="led_action_server" name="led_action_server" />
+    <node pkg="timed_led" exec="led_action_client" name="led_action_client" />
+    <node pkg="timed_led" exec="ps4_controller" name="ps4_controller" />
+</launch>
