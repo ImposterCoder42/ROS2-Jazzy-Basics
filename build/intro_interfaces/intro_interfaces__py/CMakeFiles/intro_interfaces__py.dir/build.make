@@ -71,12 +71,14 @@ include /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/
 /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_c.c
 /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/msg/_led_state.py
 /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/srv/_led_tracker.py
+/home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle.py
 /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/action/_toggle_led.py
 /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/msg/__init__.py
 /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/srv/__init__.py
 /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/action/__init__.py
 /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/msg/_led_state_s.c
 /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/srv/_led_tracker_s.c
+/home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle_s.c
 /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py: rosidl_generator_py/intro_interfaces/action/_toggle_led_s.c
 
 rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
@@ -94,6 +96,7 @@ rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_f
 rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/intro_interfaces/msg/LEDState.idl
 rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/intro_interfaces/srv/LEDTracker.idl
+rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/intro_interfaces/srv/SlowLEDToggle.idl
 rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/intro_interfaces/action/ToggleLED.idl
 rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
@@ -118,6 +121,9 @@ rosidl_generator_py/intro_interfaces/msg/_led_state.py: rosidl_generator_py/intr
 rosidl_generator_py/intro_interfaces/srv/_led_tracker.py: rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/intro_interfaces/srv/_led_tracker.py
 
+rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle.py: rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle.py
+
 rosidl_generator_py/intro_interfaces/action/_toggle_led.py: rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/intro_interfaces/action/_toggle_led.py
 
@@ -136,6 +142,9 @@ rosidl_generator_py/intro_interfaces/msg/_led_state_s.c: rosidl_generator_py/int
 rosidl_generator_py/intro_interfaces/srv/_led_tracker_s.c: rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/intro_interfaces/srv/_led_tracker_s.c
 
+rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle_s.c: rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle_s.c
+
 rosidl_generator_py/intro_interfaces/action/_toggle_led_s.c: rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/intro_interfaces/action/_toggle_led_s.c
 
@@ -152,6 +161,8 @@ intro_interfaces__py: rosidl_generator_py/intro_interfaces/msg/_led_state_s.c
 intro_interfaces__py: rosidl_generator_py/intro_interfaces/srv/__init__.py
 intro_interfaces__py: rosidl_generator_py/intro_interfaces/srv/_led_tracker.py
 intro_interfaces__py: rosidl_generator_py/intro_interfaces/srv/_led_tracker_s.c
+intro_interfaces__py: rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle.py
+intro_interfaces__py: rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle_s.c
 intro_interfaces__py: /home/optimus/first_ros2_ws/build/intro_interfaces/intro_interfaces__py/CMakeFiles/intro_interfaces__py.dir/build.make
 .PHONY : intro_interfaces__py
 

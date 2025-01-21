@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from intro_interfaces/srv/SlowLEDToggle.srv
+// generated code does not contain a copyright notice
+
+
+module intro_interfaces {
+  module srv {
+    struct SlowLEDToggle_Request {
+      boolean req;
+    };
+    struct SlowLEDToggle_Response {
+      boolean res;
+    };
+  };
+};

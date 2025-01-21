@@ -3,13 +3,13 @@ from rclpy.action import ActionClient
 from rclpy.node import Node
 
 from intro_interfaces.action import ToggleLED
-
-from time import sleep
+from intro_interfaces.srv import SlowLEDToggle
 
 class LEDActionClient(Node):
     def __init__(self):
         super().__init__('led_action_client')
         self._action_client = ActionClient(self, ToggleLED, 'led_action')
+        self.ps4_controller_srv_ = self.create_service(SlowLEDToggle, 'slow_toggle_led_cmd', self.switch_led_state_callback)
     
     def send_goal(self, new_led_state):
         goal_msg = ToggleLED.Goal()
@@ -32,6 +32,12 @@ class LEDActionClient(Node):
     def get_result_callback(self, future):
         result = future.result().result
         self.get_logger().info(f'Results: {result.is_complete}')
+    
+    def switch_led_state_callback(self, req,res):
+        state = req.req
+        self.send_goal(state)
+        res.res = True
+        return res
 
 
 # Create Main
@@ -39,13 +45,7 @@ def main(args=None):
     rclpy.init(args=args)
     node = LEDActionClient()
     
-    node.send_goal(True)
-    node.send_goal(False)
-    node.send_goal(True)
-    node.send_goal(False)
-
     rclpy.spin(node)
-
 
     node.destroy_node()
     rclpy.shutdown()

@@ -23,6 +23,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/srv/__init__.py" "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/srv/_led_tracker.py" "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/srv/_led_tracker_s.c" "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle.py" "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle_s.c" "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

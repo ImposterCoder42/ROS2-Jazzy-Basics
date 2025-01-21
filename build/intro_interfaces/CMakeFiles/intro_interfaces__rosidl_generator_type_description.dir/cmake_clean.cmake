@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_type_description/intro_interfaces/action/ToggleLED.json"
   "rosidl_generator_type_description/intro_interfaces/msg/LEDState.json"
   "rosidl_generator_type_description/intro_interfaces/srv/LEDTracker.json"
+  "rosidl_generator_type_description/intro_interfaces/srv/SlowLEDToggle.json"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -4,6 +4,7 @@
   "idl_tuples": [
     "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces:msg/LEDState.idl",
     "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces:srv/LEDTracker.idl",
+    "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces:srv/SlowLEDToggle.idl",
     "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces:action/ToggleLED.idl"
   ],
   "include_paths": [

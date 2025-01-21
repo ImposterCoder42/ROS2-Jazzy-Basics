@@ -1,0 +1,869 @@
+[0.000000] (-) TimerEvent: {}
+[0.000979] (intro_interfaces) JobQueued: {'identifier': 'intro_interfaces', 'dependencies': OrderedDict()}
+[0.001859] (timed_led) JobQueued: {'identifier': 'timed_led', 'dependencies': OrderedDict()}
+[0.002359] (intro_interfaces) JobStarted: {'identifier': 'intro_interfaces'}
+[0.031685] (timed_led) JobStarted: {'identifier': 'timed_led'}
+[0.064841] (intro_interfaces) JobProgress: {'identifier': 'intro_interfaces', 'progress': 'cmake'}
+[0.067831] (intro_interfaces) JobProgress: {'identifier': 'intro_interfaces', 'progress': 'build'}
+[0.070126] (intro_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/optimus/first_ros2_ws/build/intro_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/optimus/first_ros2_ws/build/intro_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'optimus', 'SSH_CLIENT': '192.168.1.29 59970 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/helpers/browser.sh', 'HOME': '/home/optimus', 'OLDPWD': '/home/optimus/first_ros2_ws/src/intro_interfaces/srv', 'TERM_PROGRAM_VERSION': '1.96.4', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-20b5ab92-ea46-4afd-9ae2-42ffb59bf054.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/optimus/first_ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'optimus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '111', 'PATH': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cbfb603949.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/timed_led:/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/optimus/first_ros2_ws/build/intro_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.29 59970 192.168.1.48 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/optimus/first_ros2_ws/install/timed_led:/opt/ros/jazzy'}), 'shell': False}
+[0.099906] (-) TimerEvent: {}
+[0.203307] (-) TimerEvent: {}
+[0.249516] (intro_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.303497] (-) TimerEvent: {}
+[0.403288] (intro_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.404093] (-) TimerEvent: {}
+[0.504827] (-) TimerEvent: {}
+[0.605628] (-) TimerEvent: {}
+[0.706433] (-) TimerEvent: {}
+[0.807111] (-) TimerEvent: {}
+[0.875020] (intro_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.895740] (intro_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.907261] (-) TimerEvent: {}
+[1.007981] (-) TimerEvent: {}
+[1.108687] (-) TimerEvent: {}
+[1.176194] (intro_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.208960] (-) TimerEvent: {}
+[1.310129] (-) TimerEvent: {}
+[1.385906] (intro_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.410324] (-) TimerEvent: {}
+[1.511554] (-) TimerEvent: {}
+[1.612229] (-) TimerEvent: {}
+[1.712876] (-) TimerEvent: {}
+[1.813733] (-) TimerEvent: {}
+[1.914875] (-) TimerEvent: {}
+[2.015532] (-) TimerEvent: {}
+[2.116720] (-) TimerEvent: {}
+[2.217401] (-) TimerEvent: {}
+[2.318060] (-) TimerEvent: {}
+[2.418762] (-) TimerEvent: {}
+[2.520364] (-) TimerEvent: {}
+[2.621043] (-) TimerEvent: {}
+[2.721964] (-) TimerEvent: {}
+[2.823263] (-) TimerEvent: {}
+[2.923888] (-) TimerEvent: {}
+[3.024558] (-) TimerEvent: {}
+[3.088887] (intro_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[3.124734] (-) TimerEvent: {}
+[3.225409] (-) TimerEvent: {}
+[3.326035] (-) TimerEvent: {}
+[3.427750] (-) TimerEvent: {}
+[3.528687] (-) TimerEvent: {}
+[3.607957] (intro_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.628849] (-) TimerEvent: {}
+[3.729916] (-) TimerEvent: {}
+[3.831459] (-) TimerEvent: {}
+[3.932717] (-) TimerEvent: {}
+[4.033459] (-) TimerEvent: {}
+[4.134205] (-) TimerEvent: {}
+[4.234858] (-) TimerEvent: {}
+[4.281941] (intro_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.289952] (intro_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.335028] (-) TimerEvent: {}
+[4.435769] (-) TimerEvent: {}
+[4.539297] (-) TimerEvent: {}
+[4.640126] (-) TimerEvent: {}
+[4.741513] (-) TimerEvent: {}
+[4.843052] (-) TimerEvent: {}
+[4.944093] (-) TimerEvent: {}
+[4.974600] (timed_led) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/timed_led', 'build', '--build-base', '/home/optimus/first_ros2_ws/build/timed_led/build', 'install', '--record', '/home/optimus/first_ros2_ws/build/timed_led/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/optimus/first_ros2_ws/src/timed_led', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'optimus', 'SSH_CLIENT': '192.168.1.29 59970 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/helpers/browser.sh', 'HOME': '/home/optimus', 'OLDPWD': '/home/optimus/first_ros2_ws/src/intro_interfaces/srv', 'TERM_PROGRAM_VERSION': '1.96.4', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-20b5ab92-ea46-4afd-9ae2-42ffb59bf054.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/optimus/first_ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'optimus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '111', 'PATH': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cbfb603949.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/timed_led:/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/optimus/first_ros2_ws/build/timed_led', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.29 59970 192.168.1.48 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/optimus/first_ros2_ws/build/timed_led/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[5.044268] (-) TimerEvent: {}
+[5.145306] (-) TimerEvent: {}
+[5.247019] (-) TimerEvent: {}
+[5.348117] (-) TimerEvent: {}
+[5.448917] (-) TimerEvent: {}
+[5.549645] (-) TimerEvent: {}
+[5.650477] (-) TimerEvent: {}
+[5.738085] (intro_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.750605] (-) TimerEvent: {}
+[5.805764] (intro_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.850755] (-) TimerEvent: {}
+[5.904017] (intro_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.914793] (intro_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.936080] (intro_interfaces) StdoutLine: {'line': b'-- Configuring done (5.7s)\n'}
+[5.950889] (-) TimerEvent: {}
+[6.051612] (-) TimerEvent: {}
+[6.153550] (-) TimerEvent: {}
+[6.254265] (-) TimerEvent: {}
+[6.329310] (intro_interfaces) StdoutLine: {'line': b'-- Generating done (0.3s)\n'}
+[6.354406] (-) TimerEvent: {}
+[6.440880] (intro_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/optimus/first_ros2_ws/build/intro_interfaces\n'}
+[6.454789] (-) TimerEvent: {}
+[6.556958] (-) TimerEvent: {}
+[6.655805] (intro_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[6.657637] (-) TimerEvent: {}
+[6.758318] (-) TimerEvent: {}
+[6.765254] (intro_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_intro_interfaces\n'}
+[6.802402] (timed_led) StdoutLine: {'line': b'running egg_info\n'}
+[6.859299] (-) TimerEvent: {}
+[6.962237] (-) TimerEvent: {}
+[6.966382] (timed_led) StdoutLine: {'line': b'writing ../../build/timed_led/timed_led.egg-info/PKG-INFO\n'}
+[6.970481] (timed_led) StdoutLine: {'line': b'writing dependency_links to ../../build/timed_led/timed_led.egg-info/dependency_links.txt\n'}
+[6.972922] (timed_led) StdoutLine: {'line': b'writing entry points to ../../build/timed_led/timed_led.egg-info/entry_points.txt\n'}
+[6.974629] (timed_led) StdoutLine: {'line': b'writing requirements to ../../build/timed_led/timed_led.egg-info/requires.txt\n'}
+[6.976143] (timed_led) StdoutLine: {'line': b'writing top-level names to ../../build/timed_led/timed_led.egg-info/top_level.txt\n'}
+[7.062422] (-) TimerEvent: {}
+[7.163943] (-) TimerEvent: {}
+[7.280061] (-) TimerEvent: {}
+[7.313481] (timed_led) StdoutLine: {'line': b"reading manifest file '../../build/timed_led/timed_led.egg-info/SOURCES.txt'\n"}
+[7.315661] (timed_led) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[7.318853] (timed_led) StdoutLine: {'line': b"writing manifest file '../../build/timed_led/timed_led.egg-info/SOURCES.txt'\n"}
+[7.321093] (timed_led) StdoutLine: {'line': b'running build\n'}
+[7.321853] (timed_led) StdoutLine: {'line': b'running build_py\n'}
+[7.325089] (timed_led) StdoutLine: {'line': b'running install\n'}
+[7.355506] (timed_led) StdoutLine: {'line': b'running install_lib\n'}
+[7.380243] (-) TimerEvent: {}
+[7.480915] (-) TimerEvent: {}
+[7.502316] (timed_led) StdoutLine: {'line': b'running install_data\n'}
+[7.504903] (timed_led) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.581080] (-) TimerEvent: {}
+[7.644496] (timed_led) StdoutLine: {'line': b"removing '/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[7.647582] (timed_led) StdoutLine: {'line': b'Copying ../../build/timed_led/timed_led.egg-info to /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led-0.0.0-py3.12.egg-info\n'}
+[7.656049] (timed_led) StdoutLine: {'line': b'running install_scripts\n'}
+[7.681277] (-) TimerEvent: {}
+[7.783968] (-) TimerEvent: {}
+[7.890507] (-) TimerEvent: {}
+[7.992098] (-) TimerEvent: {}
+[8.093369] (-) TimerEvent: {}
+[8.101681] (intro_interfaces) StdoutLine: {'line': b'[  1%] Built target intro_interfaces__rosidl_generator_type_description\n'}
+[8.179415] (intro_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[8.193598] (-) TimerEvent: {}
+[8.287375] (intro_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[8.297482] (intro_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[8.298203] (-) TimerEvent: {}
+[8.400310] (-) TimerEvent: {}
+[8.503347] (-) TimerEvent: {}
+[8.604300] (-) TimerEvent: {}
+[8.689111] (intro_interfaces) StdoutLine: {'line': b'writing intro_interfaces.egg-info/PKG-INFO\n'}
+[8.698401] (intro_interfaces) StdoutLine: {'line': b'writing dependency_links to intro_interfaces.egg-info/dependency_links.txt\n'}
+[8.708585] (intro_interfaces) StdoutLine: {'line': b'writing top-level names to intro_interfaces.egg-info/top_level.txt\n'}
+[8.709731] (-) TimerEvent: {}
+[8.812312] (-) TimerEvent: {}
+[8.920299] (-) TimerEvent: {}
+[9.021135] (-) TimerEvent: {}
+[9.122067] (-) TimerEvent: {}
+[9.224315] (-) TimerEvent: {}
+[9.301447] (timed_led) StdoutLine: {'line': b'Installing client_led_tracker script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[9.304294] (timed_led) StdoutLine: {'line': b'Installing led_action_client script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[9.305056] (timed_led) StdoutLine: {'line': b'Installing led_action_server script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[9.310296] (timed_led) StdoutLine: {'line': b'Installing led_timer script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[9.310918] (timed_led) StdoutLine: {'line': b'Installing ps4_controller script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[9.311416] (timed_led) StdoutLine: {'line': b'Installing server_led_tracker script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[9.311860] (timed_led) StdoutLine: {'line': b'Installing timed_led script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[9.318091] (timed_led) StdoutLine: {'line': b"writing list of installed files to '/home/optimus/first_ros2_ws/build/timed_led/install.log'\n"}
+[9.324570] (-) TimerEvent: {}
+[9.427487] (-) TimerEvent: {}
+[9.512319] (intro_interfaces) StdoutLine: {'line': b"reading manifest file 'intro_interfaces.egg-info/SOURCES.txt'\n"}
+[9.519571] (intro_interfaces) StdoutLine: {'line': b"writing manifest file 'intro_interfaces.egg-info/SOURCES.txt'\n"}
+[9.529426] (-) TimerEvent: {}
+[9.548109] (timed_led) CommandEnded: {'returncode': 0}
+[9.632347] (-) TimerEvent: {}
+[9.688972] (timed_led) JobEnded: {'identifier': 'timed_led', 'rc': 0}
+[9.732068] (intro_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_intro_interfaces_egg\n'}
+[9.732889] (-) TimerEvent: {}
+[9.833462] (-) TimerEvent: {}
+[9.934223] (-) TimerEvent: {}
+[10.036103] (-) TimerEvent: {}
+[10.137290] (-) TimerEvent: {}
+[10.238903] (-) TimerEvent: {}
+[10.339531] (-) TimerEvent: {}
+[10.440197] (-) TimerEvent: {}
+[10.540975] (-) TimerEvent: {}
+[10.641680] (-) TimerEvent: {}
+[10.742541] (-) TimerEvent: {}
+[10.843344] (-) TimerEvent: {}
+[10.943961] (-) TimerEvent: {}
+[11.044602] (-) TimerEvent: {}
+[11.145289] (-) TimerEvent: {}
+[11.247428] (-) TimerEvent: {}
+[11.352210] (-) TimerEvent: {}
+[11.454381] (-) TimerEvent: {}
+[11.555847] (-) TimerEvent: {}
+[11.658046] (-) TimerEvent: {}
+[11.753397] (intro_interfaces) StdoutLine: {'line': b'[  4%] Built target intro_interfaces__cpp\n'}
+[11.758320] (-) TimerEvent: {}
+[11.861471] (-) TimerEvent: {}
+[11.963273] (-) TimerEvent: {}
+[12.065398] (-) TimerEvent: {}
+[12.168191] (-) TimerEvent: {}
+[12.282681] (-) TimerEvent: {}
+[12.383539] (-) TimerEvent: {}
+[12.420680] (intro_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/msg/detail/led_state__type_support.c.o\x1b[0m\n'}
+[12.425292] (intro_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/msg/detail/led_state__functions.c.o\x1b[0m\n'}
+[12.426094] (intro_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/msg/detail/led_state__description.c.o\x1b[0m\n'}
+[12.430083] (intro_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/srv/detail/led_tracker__description.c.o\x1b[0m\n'}
+[12.483714] (-) TimerEvent: {}
+[12.584588] (-) TimerEvent: {}
+[12.685759] (-) TimerEvent: {}
+[12.786612] (-) TimerEvent: {}
+[12.888066] (-) TimerEvent: {}
+[12.988908] (-) TimerEvent: {}
+[13.090044] (-) TimerEvent: {}
+[13.134937] (intro_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/srv/detail/led_tracker__functions.c.o\x1b[0m\n'}
+[13.190307] (-) TimerEvent: {}
+[13.280853] (intro_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/srv/detail/led_tracker__type_support.c.o\x1b[0m\n'}
+[13.292472] (-) TimerEvent: {}
+[13.330596] (intro_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/srv/detail/slow_led_toggle__description.c.o\x1b[0m\n'}
+[13.394345] (intro_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/srv/detail/slow_led_toggle__functions.c.o\x1b[0m\n'}
+[13.395366] (-) TimerEvent: {}
+[13.498651] (-) TimerEvent: {}
+[13.604016] (-) TimerEvent: {}
+[13.613871] (intro_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/srv/detail/slow_led_toggle__type_support.c.o\x1b[0m\n'}
+[13.620394] (intro_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/action/detail/toggle_led__description.c.o\x1b[0m\n'}
+[13.664945] (intro_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/action/detail/toggle_led__functions.c.o\x1b[0m\n'}
+[13.704270] (-) TimerEvent: {}
+[13.806706] (-) TimerEvent: {}
+[13.909097] (-) TimerEvent: {}
+[13.914391] (intro_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/intro_interfaces/action/detail/toggle_led__type_support.c.o\x1b[0m\n'}
+[14.009606] (-) TimerEvent: {}
+[14.110655] (-) TimerEvent: {}
+[14.211568] (-) TimerEvent: {}
+[14.312290] (-) TimerEvent: {}
+[14.412990] (-) TimerEvent: {}
+[14.513726] (-) TimerEvent: {}
+[14.563789] (intro_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libintro_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[14.613900] (-) TimerEvent: {}
+[14.714668] (-) TimerEvent: {}
+[14.815486] (-) TimerEvent: {}
+[14.881571] (intro_interfaces) StdoutLine: {'line': b'[ 25%] Built target intro_interfaces__rosidl_generator_c\n'}
+[14.916388] (-) TimerEvent: {}
+[14.951484] (intro_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[14.957342] (intro_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[14.963047] (intro_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[14.967329] (intro_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[15.019348] (-) TimerEvent: {}
+[15.120263] (-) TimerEvent: {}
+[15.222409] (-) TimerEvent: {}
+[15.327341] (-) TimerEvent: {}
+[15.428432] (-) TimerEvent: {}
+[15.532573] (-) TimerEvent: {}
+[15.633589] (-) TimerEvent: {}
+[15.736032] (-) TimerEvent: {}
+[15.838622] (-) TimerEvent: {}
+[15.941432] (-) TimerEvent: {}
+[16.043711] (-) TimerEvent: {}
+[16.147901] (-) TimerEvent: {}
+[16.252890] (-) TimerEvent: {}
+[16.355377] (-) TimerEvent: {}
+[16.456052] (-) TimerEvent: {}
+[16.558903] (-) TimerEvent: {}
+[16.664233] (-) TimerEvent: {}
+[16.764950] (-) TimerEvent: {}
+[16.866836] (-) TimerEvent: {}
+[16.971098] (-) TimerEvent: {}
+[17.074365] (-) TimerEvent: {}
+[17.176118] (-) TimerEvent: {}
+[17.290875] (-) TimerEvent: {}
+[17.313440] (intro_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/intro_interfaces/msg/led_state__type_support.cpp.o\x1b[0m\n'}
+[17.391220] (-) TimerEvent: {}
+[17.492248] (-) TimerEvent: {}
+[17.593789] (-) TimerEvent: {}
+[17.697011] (-) TimerEvent: {}
+[17.799648] (-) TimerEvent: {}
+[17.902298] (-) TimerEvent: {}
+[17.950039] (intro_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/intro_interfaces/msg/detail/led_state__type_support.cpp.o\x1b[0m\n'}
+[18.002520] (-) TimerEvent: {}
+[18.043456] (intro_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/intro_interfaces/msg/detail/led_state__type_support.c.o\x1b[0m\n'}
+[18.102676] (-) TimerEvent: {}
+[18.204185] (-) TimerEvent: {}
+[18.253015] (intro_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/intro_interfaces/srv/led_tracker__type_support.cpp.o\x1b[0m\n'}
+[18.293457] (intro_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/intro_interfaces/srv/detail/led_tracker__type_support.c.o\x1b[0m\n'}
+[18.306288] (-) TimerEvent: {}
+[18.408355] (-) TimerEvent: {}
+[18.510478] (-) TimerEvent: {}
+[18.581078] (intro_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/intro_interfaces/srv/slow_led_toggle__type_support.cpp.o\x1b[0m\n'}
+[18.612489] (-) TimerEvent: {}
+[18.664064] (intro_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/intro_interfaces/srv/detail/slow_led_toggle__type_support.c.o\x1b[0m\n'}
+[18.712989] (-) TimerEvent: {}
+[18.815333] (-) TimerEvent: {}
+[18.918490] (-) TimerEvent: {}
+[19.019408] (-) TimerEvent: {}
+[19.049464] (intro_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/intro_interfaces/action/toggle_led__type_support.cpp.o\x1b[0m\n'}
+[19.063600] (intro_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/intro_interfaces/action/detail/toggle_led__type_support.c.o\x1b[0m\n'}
+[19.119635] (-) TimerEvent: {}
+[19.221273] (-) TimerEvent: {}
+[19.323523] (-) TimerEvent: {}
+[19.420482] (intro_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/intro_interfaces/msg/detail/dds_fastrtps/led_state__type_support.cpp.o\x1b[0m\n'}
+[19.423755] (-) TimerEvent: {}
+[19.484503] (intro_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libintro_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[19.524427] (-) TimerEvent: {}
+[19.602733] (intro_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking C shared library libintro_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[19.627363] (-) TimerEvent: {}
+[19.728439] (-) TimerEvent: {}
+[19.788293] (intro_interfaces) StdoutLine: {'line': b'[ 50%] Built target intro_interfaces__rosidl_typesupport_c\n'}
+[19.832370] (-) TimerEvent: {}
+[19.861304] (intro_interfaces) StdoutLine: {'line': b'[ 50%] Built target intro_interfaces__rosidl_typesupport_introspection_c\n'}
+[19.877657] (intro_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[19.927527] (intro_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/intro_interfaces/srv/detail/led_tracker__type_support.cpp.o\x1b[0m\n'}
+[19.933193] (-) TimerEvent: {}
+[20.037501] (-) TimerEvent: {}
+[20.138694] (-) TimerEvent: {}
+[20.241262] (-) TimerEvent: {}
+[20.345268] (-) TimerEvent: {}
+[20.447590] (-) TimerEvent: {}
+[20.548513] (-) TimerEvent: {}
+[20.649142] (intro_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/intro_interfaces/srv/detail/dds_fastrtps/led_tracker__type_support.cpp.o\x1b[0m\n'}
+[20.650128] (-) TimerEvent: {}
+[20.754216] (-) TimerEvent: {}
+[20.855008] (-) TimerEvent: {}
+[20.956661] (-) TimerEvent: {}
+[21.059652] (-) TimerEvent: {}
+[21.160684] (-) TimerEvent: {}
+[21.262820] (-) TimerEvent: {}
+[21.366734] (-) TimerEvent: {}
+[21.469450] (-) TimerEvent: {}
+[21.576331] (-) TimerEvent: {}
+[21.678346] (-) TimerEvent: {}
+[21.780048] (-) TimerEvent: {}
+[21.884081] (-) TimerEvent: {}
+[21.985564] (-) TimerEvent: {}
+[22.090412] (-) TimerEvent: {}
+[22.196855] (-) TimerEvent: {}
+[22.313216] (-) TimerEvent: {}
+[22.416671] (-) TimerEvent: {}
+[22.516680] (intro_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/intro_interfaces/msg/led_state__type_support.cpp.o\x1b[0m\n'}
+[22.517795] (-) TimerEvent: {}
+[22.621733] (-) TimerEvent: {}
+[22.723246] (-) TimerEvent: {}
+[22.826793] (-) TimerEvent: {}
+[22.929057] (-) TimerEvent: {}
+[23.007828] (intro_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/intro_interfaces/srv/detail/dds_fastrtps/slow_led_toggle__type_support.cpp.o\x1b[0m\n'}
+[23.029218] (-) TimerEvent: {}
+[23.133079] (-) TimerEvent: {}
+[23.190689] (intro_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/intro_interfaces/srv/detail/slow_led_toggle__type_support.cpp.o\x1b[0m\n'}
+[23.233317] (-) TimerEvent: {}
+[23.334199] (-) TimerEvent: {}
+[23.437399] (-) TimerEvent: {}
+[23.540022] (-) TimerEvent: {}
+[23.643681] (-) TimerEvent: {}
+[23.747015] (-) TimerEvent: {}
+[23.850216] (-) TimerEvent: {}
+[23.955340] (-) TimerEvent: {}
+[24.056226] (-) TimerEvent: {}
+[24.160825] (-) TimerEvent: {}
+[24.265365] (-) TimerEvent: {}
+[24.366438] (-) TimerEvent: {}
+[24.470562] (-) TimerEvent: {}
+[24.572994] (-) TimerEvent: {}
+[24.676365] (-) TimerEvent: {}
+[24.777627] (-) TimerEvent: {}
+[24.855623] (intro_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/intro_interfaces/srv/led_tracker__type_support.cpp.o\x1b[0m\n'}
+[24.879383] (-) TimerEvent: {}
+[24.981330] (-) TimerEvent: {}
+[25.082418] (-) TimerEvent: {}
+[25.186341] (-) TimerEvent: {}
+[25.258815] (intro_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[25.288097] (-) TimerEvent: {}
+[25.393306] (-) TimerEvent: {}
+[25.494186] (-) TimerEvent: {}
+[25.597330] (-) TimerEvent: {}
+[25.698200] (-) TimerEvent: {}
+[25.801323] (-) TimerEvent: {}
+[25.905318] (-) TimerEvent: {}
+[26.006285] (-) TimerEvent: {}
+[26.107100] (-) TimerEvent: {}
+[26.210643] (-) TimerEvent: {}
+[26.311999] (intro_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/intro_interfaces/action/detail/toggle_led__type_support.cpp.o\x1b[0m\n'}
+[26.313035] (-) TimerEvent: {}
+[26.418262] (-) TimerEvent: {}
+[26.520687] (-) TimerEvent: {}
+[26.622324] (-) TimerEvent: {}
+[26.724350] (-) TimerEvent: {}
+[26.827340] (-) TimerEvent: {}
+[26.930363] (-) TimerEvent: {}
+[27.031300] (-) TimerEvent: {}
+[27.133327] (-) TimerEvent: {}
+[27.237069] (-) TimerEvent: {}
+[27.340764] (-) TimerEvent: {}
+[27.444310] (-) TimerEvent: {}
+[27.548412] (-) TimerEvent: {}
+[27.650662] (-) TimerEvent: {}
+[27.674062] (intro_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/intro_interfaces/action/detail/dds_fastrtps/toggle_led__type_support.cpp.o\x1b[0m\n'}
+[27.751353] (-) TimerEvent: {}
+[27.853852] (-) TimerEvent: {}
+[27.943067] (intro_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/intro_interfaces/srv/slow_led_toggle__type_support.cpp.o\x1b[0m\n'}
+[27.954050] (-) TimerEvent: {}
+[28.057074] (-) TimerEvent: {}
+[28.160729] (-) TimerEvent: {}
+[28.263329] (-) TimerEvent: {}
+[28.364276] (-) TimerEvent: {}
+[28.465698] (-) TimerEvent: {}
+[28.568980] (-) TimerEvent: {}
+[28.671389] (-) TimerEvent: {}
+[28.775319] (-) TimerEvent: {}
+[28.877323] (-) TimerEvent: {}
+[28.985411] (-) TimerEvent: {}
+[29.088345] (-) TimerEvent: {}
+[29.193834] (-) TimerEvent: {}
+[29.297888] (-) TimerEvent: {}
+[29.404285] (-) TimerEvent: {}
+[29.505202] (-) TimerEvent: {}
+[29.607997] (-) TimerEvent: {}
+[29.712239] (-) TimerEvent: {}
+[29.814540] (-) TimerEvent: {}
+[29.918814] (-) TimerEvent: {}
+[30.024007] (-) TimerEvent: {}
+[30.128875] (-) TimerEvent: {}
+[30.230874] (-) TimerEvent: {}
+[30.334784] (-) TimerEvent: {}
+[30.437121] (-) TimerEvent: {}
+[30.541333] (-) TimerEvent: {}
+[30.644303] (-) TimerEvent: {}
+[30.745258] (-) TimerEvent: {}
+[30.848196] (-) TimerEvent: {}
+[30.949300] (-) TimerEvent: {}
+[30.997321] (intro_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/intro_interfaces/msg/detail/led_state__type_support_c.cpp.o\x1b[0m\n'}
+[31.051836] (-) TimerEvent: {}
+[31.155762] (-) TimerEvent: {}
+[31.257618] (-) TimerEvent: {}
+[31.358776] (-) TimerEvent: {}
+[31.376826] (intro_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/intro_interfaces/action/toggle_led__type_support.cpp.o\x1b[0m\n'}
+[31.458964] (-) TimerEvent: {}
+[31.559859] (-) TimerEvent: {}
+[31.662137] (-) TimerEvent: {}
+[31.764740] (-) TimerEvent: {}
+[31.865786] (-) TimerEvent: {}
+[31.889430] (intro_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libintro_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[31.968131] (-) TimerEvent: {}
+[32.071353] (-) TimerEvent: {}
+[32.172650] (-) TimerEvent: {}
+[32.276354] (-) TimerEvent: {}
+[32.388216] (-) TimerEvent: {}
+[32.432096] (intro_interfaces) StdoutLine: {'line': b'[ 71%] Built target intro_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[32.491347] (-) TimerEvent: {}
+[32.509112] (intro_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/intro_interfaces/srv/detail/led_tracker__type_support_c.cpp.o\x1b[0m\n'}
+[32.594386] (-) TimerEvent: {}
+[32.695571] (-) TimerEvent: {}
+[32.797329] (-) TimerEvent: {}
+[32.900963] (-) TimerEvent: {}
+[33.001974] (-) TimerEvent: {}
+[33.104817] (-) TimerEvent: {}
+[33.208875] (-) TimerEvent: {}
+[33.310464] (-) TimerEvent: {}
+[33.414756] (-) TimerEvent: {}
+[33.515820] (-) TimerEvent: {}
+[33.618225] (-) TimerEvent: {}
+[33.720771] (-) TimerEvent: {}
+[33.824452] (-) TimerEvent: {}
+[33.925426] (-) TimerEvent: {}
+[34.026525] (-) TimerEvent: {}
+[34.130818] (-) TimerEvent: {}
+[34.232402] (-) TimerEvent: {}
+[34.335805] (-) TimerEvent: {}
+[34.437090] (-) TimerEvent: {}
+[34.540900] (-) TimerEvent: {}
+[34.642051] (-) TimerEvent: {}
+[34.745598] (-) TimerEvent: {}
+[34.754998] (intro_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/intro_interfaces/srv/detail/slow_led_toggle__type_support_c.cpp.o\x1b[0m\n'}
+[34.845869] (-) TimerEvent: {}
+[34.950883] (-) TimerEvent: {}
+[35.053446] (-) TimerEvent: {}
+[35.154122] (intro_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libintro_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[35.157034] (-) TimerEvent: {}
+[35.258481] (-) TimerEvent: {}
+[35.360917] (-) TimerEvent: {}
+[35.465019] (-) TimerEvent: {}
+[35.567894] (-) TimerEvent: {}
+[35.670790] (-) TimerEvent: {}
+[35.773464] (-) TimerEvent: {}
+[35.806871] (intro_interfaces) StdoutLine: {'line': b'[ 76%] Built target intro_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[35.874684] (-) TimerEvent: {}
+[35.880545] (intro_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/intro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/intro_interfaces/action/detail/toggle_led__type_support_c.cpp.o\x1b[0m\n'}
+[35.974903] (-) TimerEvent: {}
+[36.078777] (-) TimerEvent: {}
+[36.180969] (-) TimerEvent: {}
+[36.283825] (-) TimerEvent: {}
+[36.388625] (-) TimerEvent: {}
+[36.489620] (-) TimerEvent: {}
+[36.592038] (-) TimerEvent: {}
+[36.692961] (-) TimerEvent: {}
+[36.794693] (-) TimerEvent: {}
+[36.896241] (-) TimerEvent: {}
+[36.993019] (intro_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libintro_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[36.996453] (-) TimerEvent: {}
+[37.098386] (-) TimerEvent: {}
+[37.200785] (-) TimerEvent: {}
+[37.302565] (-) TimerEvent: {}
+[37.419202] (-) TimerEvent: {}
+[37.489382] (intro_interfaces) StdoutLine: {'line': b'[ 79%] Built target intro_interfaces__rosidl_typesupport_cpp\n'}
+[37.519359] (-) TimerEvent: {}
+[37.620247] (-) TimerEvent: {}
+[37.721712] (-) TimerEvent: {}
+[37.822602] (-) TimerEvent: {}
+[37.923456] (-) TimerEvent: {}
+[38.024412] (-) TimerEvent: {}
+[38.125245] (-) TimerEvent: {}
+[38.225952] (-) TimerEvent: {}
+[38.326693] (-) TimerEvent: {}
+[38.427433] (-) TimerEvent: {}
+[38.528137] (-) TimerEvent: {}
+[38.628885] (-) TimerEvent: {}
+[38.729647] (-) TimerEvent: {}
+[38.830427] (-) TimerEvent: {}
+[38.931200] (-) TimerEvent: {}
+[39.031925] (-) TimerEvent: {}
+[39.047250] (intro_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libintro_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[39.132109] (-) TimerEvent: {}
+[39.232910] (-) TimerEvent: {}
+[39.333790] (-) TimerEvent: {}
+[39.415586] (intro_interfaces) StdoutLine: {'line': b'[ 81%] Built target intro_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[39.433976] (-) TimerEvent: {}
+[39.526242] (intro_interfaces) StdoutLine: {'line': b'[ 81%] Built target intro_interfaces\n'}
+[39.534180] (-) TimerEvent: {}
+[39.634856] (-) TimerEvent: {}
+[39.639745] (intro_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[39.735080] (-) TimerEvent: {}
+[39.835963] (-) TimerEvent: {}
+[39.936808] (-) TimerEvent: {}
+[40.037478] (-) TimerEvent: {}
+[40.138196] (-) TimerEvent: {}
+[40.238785] (-) TimerEvent: {}
+[40.339427] (-) TimerEvent: {}
+[40.440023] (-) TimerEvent: {}
+[40.540658] (-) TimerEvent: {}
+[40.641268] (-) TimerEvent: {}
+[40.741889] (-) TimerEvent: {}
+[40.842544] (-) TimerEvent: {}
+[40.943117] (-) TimerEvent: {}
+[41.043799] (-) TimerEvent: {}
+[41.144445] (-) TimerEvent: {}
+[41.245099] (-) TimerEvent: {}
+[41.345745] (-) TimerEvent: {}
+[41.446408] (-) TimerEvent: {}
+[41.547049] (-) TimerEvent: {}
+[41.647687] (-) TimerEvent: {}
+[41.748405] (-) TimerEvent: {}
+[41.848993] (-) TimerEvent: {}
+[41.949609] (-) TimerEvent: {}
+[42.050238] (-) TimerEvent: {}
+[42.150841] (-) TimerEvent: {}
+[42.251469] (-) TimerEvent: {}
+[42.352117] (-) TimerEvent: {}
+[42.452870] (-) TimerEvent: {}
+[42.553540] (-) TimerEvent: {}
+[42.654370] (-) TimerEvent: {}
+[42.755048] (-) TimerEvent: {}
+[42.855708] (-) TimerEvent: {}
+[42.956348] (-) TimerEvent: {}
+[43.056970] (-) TimerEvent: {}
+[43.157624] (-) TimerEvent: {}
+[43.258405] (-) TimerEvent: {}
+[43.359425] (-) TimerEvent: {}
+[43.460361] (-) TimerEvent: {}
+[43.560943] (-) TimerEvent: {}
+[43.661568] (-) TimerEvent: {}
+[43.762198] (-) TimerEvent: {}
+[43.862999] (-) TimerEvent: {}
+[43.964424] (-) TimerEvent: {}
+[44.065363] (-) TimerEvent: {}
+[44.150268] (intro_interfaces) StdoutLine: {'line': b'[ 82%] Built target intro_interfaces__py\n'}
+[44.165543] (-) TimerEvent: {}
+[44.266357] (-) TimerEvent: {}
+[44.304869] (intro_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/intro_interfaces/msg/_led_state_s.c.o\x1b[0m\n'}
+[44.325390] (intro_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/intro_interfaces/action/_toggle_led_s.c.o\x1b[0m\n'}
+[44.358375] (intro_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/intro_interfaces/srv/_led_tracker_s.c.o\x1b[0m\n'}
+[44.368220] (-) TimerEvent: {}
+[44.376758] (intro_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/intro_interfaces/srv/_slow_led_toggle_s.c.o\x1b[0m\n'}
+[44.473344] (-) TimerEvent: {}
+[44.575320] (-) TimerEvent: {}
+[44.676216] (-) TimerEvent: {}
+[44.781689] (-) TimerEvent: {}
+[44.882707] (-) TimerEvent: {}
+[44.986663] (-) TimerEvent: {}
+[45.092346] (-) TimerEvent: {}
+[45.193388] (-) TimerEvent: {}
+[45.300799] (-) TimerEvent: {}
+[45.403408] (-) TimerEvent: {}
+[45.504672] (-) TimerEvent: {}
+[45.608333] (-) TimerEvent: {}
+[45.709198] (-) TimerEvent: {}
+[45.810248] (-) TimerEvent: {}
+[45.840139] (intro_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library libintro_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[45.910497] (-) TimerEvent: {}
+[46.012436] (-) TimerEvent: {}
+[46.115981] (-) TimerEvent: {}
+[46.177584] (intro_interfaces) StdoutLine: {'line': b'[ 90%] Built target intro_interfaces__rosidl_generator_py\n'}
+[46.217594] (-) TimerEvent: {}
+[46.320918] (-) TimerEvent: {}
+[46.431040] (-) TimerEvent: {}
+[46.457259] (intro_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[46.475511] (intro_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[46.478417] (intro_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/intro_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[46.540411] (-) TimerEvent: {}
+[46.641702] (-) TimerEvent: {}
+[46.742471] (-) TimerEvent: {}
+[46.845261] (-) TimerEvent: {}
+[46.950444] (-) TimerEvent: {}
+[47.052827] (-) TimerEvent: {}
+[47.156506] (-) TimerEvent: {}
+[47.260891] (-) TimerEvent: {}
+[47.365884] (-) TimerEvent: {}
+[47.467227] (-) TimerEvent: {}
+[47.563112] (intro_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/intro_interfaces/intro_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[47.567979] (-) TimerEvent: {}
+[47.626699] (intro_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/intro_interfaces/intro_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[47.668442] (-) TimerEvent: {}
+[47.772087] (-) TimerEvent: {}
+[47.832041] (intro_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/intro_interfaces/intro_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[47.860393] (intro_interfaces) StdoutLine: {'line': b'[100%] Built target intro_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[47.872319] (-) TimerEvent: {}
+[47.885883] (intro_interfaces) StdoutLine: {'line': b'[100%] Built target intro_interfaces_s__rosidl_typesupport_c\n'}
+[47.975509] (-) TimerEvent: {}
+[48.076483] (-) TimerEvent: {}
+[48.079758] (intro_interfaces) StdoutLine: {'line': b'[100%] Built target intro_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[48.161060] (intro_interfaces) CommandEnded: {'returncode': 0}
+[48.163964] (intro_interfaces) JobProgress: {'identifier': 'intro_interfaces', 'progress': 'install'}
+[48.176671] (-) TimerEvent: {}
+[48.214471] (intro_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/optimus/first_ros2_ws/build/intro_interfaces'], 'cwd': '/home/optimus/first_ros2_ws/build/intro_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'optimus', 'SSH_CLIENT': '192.168.1.29 59970 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/helpers/browser.sh', 'HOME': '/home/optimus', 'OLDPWD': '/home/optimus/first_ros2_ws/src/intro_interfaces/srv', 'TERM_PROGRAM_VERSION': '1.96.4', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-20b5ab92-ea46-4afd-9ae2-42ffb59bf054.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/optimus/first_ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'optimus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '111', 'PATH': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cbfb603949.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/timed_led:/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/optimus/first_ros2_ws/build/intro_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.29 59970 192.168.1.48 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/optimus/first_ros2_ws/install/timed_led:/opt/ros/jazzy'}), 'shell': False}
+[48.259012] (intro_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[48.260659] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/ament_index/resource_index/rosidl_interfaces/intro_interfaces\n'}
+[48.263609] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/msg/LEDState.json\n'}
+[48.265014] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/LEDTracker.json\n'}
+[48.269640] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/SlowLEDToggle.json\n'}
+[48.271018] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/action/ToggleLED.json\n'}
+[48.275708] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[48.276800] (-) TimerEvent: {}
+[48.281476] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[48.282260] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/led_tracker.h\n'}
+[48.282852] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[48.283418] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__functions.c\n'}
+[48.284003] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__description.c\n'}
+[48.284936] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__description.c\n'}
+[48.285725] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__functions.c\n'}
+[48.286346] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__struct.h\n'}
+[48.287375] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__type_support.h\n'}
+[48.288775] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__type_support.c\n'}
+[48.290365] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__struct.h\n'}
+[48.291906] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__type_support.h\n'}
+[48.293618] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__functions.h\n'}
+[48.295319] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__type_support.c\n'}
+[48.296819] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__functions.h\n'}
+[48.298246] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/slow_led_toggle.h\n'}
+[48.299444] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[48.302630] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/led_state.h\n'}
+[48.303545] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[48.304206] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[48.305676] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__type_support.c\n'}
+[48.306438] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__description.c\n'}
+[48.307510] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__functions.c\n'}
+[48.308801] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__type_support.h\n'}
+[48.309567] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__struct.h\n'}
+[48.310464] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__functions.h\n'}
+[48.311868] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[48.312695] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[48.313625] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__type_support.h\n'}
+[48.316461] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__type_support.c\n'}
+[48.317579] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__functions.c\n'}
+[48.319652] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__struct.h\n'}
+[48.321430] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__description.c\n'}
+[48.323397] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__functions.h\n'}
+[48.325459] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/toggle_led.h\n'}
+[48.327025] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/library_path.sh\n'}
+[48.328139] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/library_path.dsv\n'}
+[48.329137] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_generator_c.so\n'}
+[48.334079] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_generator_c.so" to ""\n'}
+[48.335080] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[48.336257] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[48.336892] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[48.337768] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__rosidl_typesupport_fastrtps_c.h\n'}
+[48.338506] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__rosidl_typesupport_fastrtps_c.h\n'}
+[48.339531] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[48.340760] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[48.341552] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__rosidl_typesupport_fastrtps_c.h\n'}
+[48.342532] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[48.343350] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[48.343937] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[48.344689] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__rosidl_typesupport_fastrtps_c.h\n'}
+[48.347219] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[48.352012] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[48.353179] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[48.354014] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[48.354597] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[48.355738] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__rosidl_typesupport_introspection_c.h\n'}
+[48.357244] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__type_support.c\n'}
+[48.358735] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__type_support.c\n'}
+[48.361026] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__rosidl_typesupport_introspection_c.h\n'}
+[48.362595] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[48.363575] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[48.364233] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__type_support.c\n'}
+[48.365685] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__rosidl_typesupport_introspection_c.h\n'}
+[48.367272] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[48.368032] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[48.368895] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[48.370127] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__rosidl_typesupport_introspection_c.h\n'}
+[48.371073] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__type_support.c\n'}
+[48.374371] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[48.376997] (-) TimerEvent: {}
+[48.378335] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[48.379515] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_c.so\n'}
+[48.382934] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[48.384464] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[48.385119] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[48.387029] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/slow_led_toggle.hpp\n'}
+[48.388018] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[48.390444] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__traits.hpp\n'}
+[48.391745] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__type_support.hpp\n'}
+[48.392633] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__struct.hpp\n'}
+[48.395473] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__builder.hpp\n'}
+[48.396690] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__type_support.hpp\n'}
+[48.397252] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__traits.hpp\n'}
+[48.401500] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__builder.hpp\n'}
+[48.402263] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__struct.hpp\n'}
+[48.402957] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/led_tracker.hpp\n'}
+[48.404510] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[48.406428] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[48.408580] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/led_state.hpp\n'}
+[48.409306] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[48.409961] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__struct.hpp\n'}
+[48.414122] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__type_support.hpp\n'}
+[48.415074] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__builder.hpp\n'}
+[48.415887] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__traits.hpp\n'}
+[48.416528] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[48.418618] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/toggle_led.hpp\n'}
+[48.419496] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[48.420056] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__type_support.hpp\n'}
+[48.421374] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__builder.hpp\n'}
+[48.422496] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__struct.hpp\n'}
+[48.423536] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__traits.hpp\n'}
+[48.424555] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[48.425579] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[48.429408] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[48.430512] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[48.432931] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/dds_fastrtps\n'}
+[48.435010] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[48.436751] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[48.439192] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[48.441546] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[48.443685] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/dds_fastrtps\n'}
+[48.445991] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[48.449620] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[48.453033] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[48.457812] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[48.467597] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/dds_fastrtps\n'}
+[48.473502] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[48.476016] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[48.478489] (-) TimerEvent: {}
+[48.479531] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[48.480770] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[48.482274] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[48.483729] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__rosidl_typesupport_introspection_cpp.hpp\n'}
+[48.485063] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__type_support.cpp\n'}
+[48.488690] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__type_support.cpp\n'}
+[48.490715] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[48.491939] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[48.492750] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[48.493693] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[48.494450] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__type_support.cpp\n'}
+[48.495122] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[48.496330] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[48.497178] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__rosidl_typesupport_introspection_cpp.hpp\n'}
+[48.498233] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__type_support.cpp\n'}
+[48.499204] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[48.499989] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[48.501252] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_cpp.so\n'}
+[48.502590] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[48.503375] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/pythonpath.sh\n'}
+[48.504204] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/pythonpath.dsv\n'}
+[48.504972] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces-0.0.0-py3.12.egg-info\n'}
+[48.506110] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[48.507129] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[48.508482] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[48.509534] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[48.510415] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces\n'}
+[48.511219] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv\n'}
+[48.512431] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/_led_tracker_s.c\n'}
+[48.513355] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/_led_tracker.py\n'}
+[48.514030] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/_slow_led_toggle_s.c\n'}
+[48.514964] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/__init__.py\n'}
+[48.516010] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/_slow_led_toggle.py\n'}
+[48.516959] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg\n'}
+[48.517806] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg/__init__.py\n'}
+[48.519223] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg/_led_state.py\n'}
+[48.520257] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg/_led_state_s.c\n'}
+[48.521514] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[48.523485] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[48.525022] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action\n'}
+[48.528502] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action/__init__.py\n'}
+[48.529224] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action/_toggle_led_s.c\n'}
+[48.530575] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action/_toggle_led.py\n'}
+[48.532380] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/__init__.py\n'}
+[48.533822] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_c.so\n'}
+[48.537378] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[48.539563] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[48.542870] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[48.580300] (-) TimerEvent: {}
+[48.681309] (-) TimerEvent: {}
+[48.783005] (-) TimerEvent: {}
+[48.886518] (-) TimerEvent: {}
+[48.921578] (intro_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces'...\n"}
+[48.923252] (intro_interfaces) StdoutLine: {'line': b"Compiling '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/__init__.py'...\n"}
+[48.926554] (intro_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action'...\n"}
+[48.928186] (intro_interfaces) StdoutLine: {'line': b"Compiling '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action/__init__.py'...\n"}
+[48.929689] (intro_interfaces) StdoutLine: {'line': b"Compiling '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action/_toggle_led.py'...\n"}
+[48.931423] (intro_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg'...\n"}
+[48.932786] (intro_interfaces) StdoutLine: {'line': b"Compiling '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg/__init__.py'...\n"}
+[48.934668] (intro_interfaces) StdoutLine: {'line': b"Compiling '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg/_led_state.py'...\n"}
+[48.935830] (intro_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv'...\n"}
+[48.937438] (intro_interfaces) StdoutLine: {'line': b"Compiling '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/__init__.py'...\n"}
+[48.939707] (intro_interfaces) StdoutLine: {'line': b"Compiling '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/_led_tracker.py'...\n"}
+[48.941982] (intro_interfaces) StdoutLine: {'line': b"Compiling '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/_slow_led_toggle.py'...\n"}
+[48.969127] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[48.972690] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[48.974583] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[48.978233] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[48.979935] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_c.so\n'}
+[48.983709] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[48.984847] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_generator_py.so\n'}
+[48.986695] (-) TimerEvent: {}
+[48.989072] (intro_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_generator_py.so" to ""\n'}
+[48.990286] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/msg/LEDState.idl\n'}
+[48.991069] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/LEDTracker.idl\n'}
+[48.998472] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/SlowLEDToggle.idl\n'}
+[48.999601] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/action/ToggleLED.idl\n'}
+[49.005862] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/msg/LEDState.msg\n'}
+[49.013323] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/LEDTracker.srv\n'}
+[49.017924] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/SlowLEDToggle.srv\n'}
+[49.019778] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/action/ToggleLED.action\n'}
+[49.021741] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/ament_index/resource_index/package_run_dependencies/intro_interfaces\n'}
+[49.023421] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/ament_index/resource_index/parent_prefix_path/intro_interfaces\n'}
+[49.024795] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/ament_prefix_path.sh\n'}
+[49.026621] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/ament_prefix_path.dsv\n'}
+[49.028584] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/path.sh\n'}
+[49.029376] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/path.dsv\n'}
+[49.030697] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/local_setup.bash\n'}
+[49.032512] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/local_setup.sh\n'}
+[49.033913] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/local_setup.zsh\n'}
+[49.034818] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/local_setup.dsv\n'}
+[49.036022] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/package.dsv\n'}
+[49.037016] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/ament_index/resource_index/packages/intro_interfaces\n'}
+[49.037984] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_generator_cExport.cmake\n'}
+[49.039614] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[49.040325] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[49.041213] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[49.042709] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[49.045107] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[49.048537] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[49.049869] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[49.050971] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_generator_cppExport.cmake\n'}
+[49.051778] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[49.052428] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[49.053491] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[49.054589] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[49.055496] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[49.056488] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[49.057452] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_generator_pyExport.cmake\n'}
+[49.058460] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[49.059281] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[49.060079] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[49.061536] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[49.063065] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[49.064816] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[49.066288] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[49.067115] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[49.068599] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfacesConfig.cmake\n'}
+[49.069994] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfacesConfig-version.cmake\n'}
+[49.071621] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/package.xml\n'}
+[49.073841] (intro_interfaces) CommandEnded: {'returncode': 0}
+[49.087665] (-) TimerEvent: {}
+[49.188997] (-) TimerEvent: {}
+[49.216395] (intro_interfaces) JobEnded: {'identifier': 'intro_interfaces', 'rc': 0}
+[49.221186] (-) EventReactorShutdown: {}

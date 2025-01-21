@@ -55,6 +55,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/srv" TYPE FILE FILES "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/srv/SlowLEDToggle.json")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/action" TYPE FILE FILES "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/action/ToggleLED.json")
 endif()
 
@@ -379,6 +383,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/srv" TYPE FILE FILES "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces/srv/SlowLEDToggle.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/action" TYPE FILE FILES "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces/action/ToggleLED.idl")
 endif()
 
@@ -388,6 +396,10 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/srv" TYPE FILE FILES "/home/optimus/first_ros2_ws/src/intro_interfaces/srv/LEDTracker.srv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/intro_interfaces/srv" TYPE FILE FILES "/home/optimus/first_ros2_ws/src/intro_interfaces/srv/SlowLEDToggle.srv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

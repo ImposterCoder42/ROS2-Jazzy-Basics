@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/action/ToggleLED.json" "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/msg/LEDState.json"
   "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/srv/LEDTracker.json" "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/msg/LEDState.json"
+  "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/srv/SlowLEDToggle.json" "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/msg/LEDState.json"
   )
 
 

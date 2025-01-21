@@ -5,11 +5,13 @@
   "idl_tuples": [
     "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces:msg/LEDState.idl",
     "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces:srv/LEDTracker.idl",
+    "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces:srv/SlowLEDToggle.idl",
     "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces:action/ToggleLED.idl"
   ],
   "ros_interface_files": [
     "/home/optimus/first_ros2_ws/src/intro_interfaces/msg/LEDState.msg",
     "/home/optimus/first_ros2_ws/src/intro_interfaces/srv/LEDTracker.srv",
+    "/home/optimus/first_ros2_ws/src/intro_interfaces/srv/SlowLEDToggle.srv",
     "/home/optimus/first_ros2_ws/src/intro_interfaces/action/ToggleLED.action"
   ],
   "ros_interface_dependencies": [
@@ -44,6 +46,7 @@
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces/msg/LEDState.idl",
     "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces/srv/LEDTracker.idl",
+    "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces/srv/SlowLEDToggle.idl",
     "/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_adapter/intro_interfaces/action/ToggleLED.idl",
     "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
@@ -57,6 +60,7 @@
   "type_description_tuples": [
     "msg/LEDState.idl:/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/msg/LEDState.json",
     "srv/LEDTracker.idl:/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/srv/LEDTracker.json",
+    "srv/SlowLEDToggle.idl:/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/srv/SlowLEDToggle.json",
     "action/ToggleLED.idl:/home/optimus/first_ros2_ws/build/intro_interfaces/rosidl_generator_type_description/intro_interfaces/action/ToggleLED.json"
   ]
 }

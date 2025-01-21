@@ -3,5 +3,6 @@ client_led_tracker = timed_led.client_led_tracker:main
 led_action_client = timed_led.led_action_client:main
 led_action_server = timed_led.led_action_server:main
 led_timer = timed_led.publisher_timed_led:main
+ps4_controller = timed_led.ps4_controller:main
 server_led_tracker = timed_led.service_led_tracker:main
 timed_led = timed_led.subscriber_timed_led:main

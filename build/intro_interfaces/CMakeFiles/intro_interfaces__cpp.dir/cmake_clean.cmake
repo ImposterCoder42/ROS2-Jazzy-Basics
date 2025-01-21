@@ -15,7 +15,12 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/intro_interfaces/srv/detail/led_tracker__struct.hpp"
   "rosidl_generator_cpp/intro_interfaces/srv/detail/led_tracker__traits.hpp"
   "rosidl_generator_cpp/intro_interfaces/srv/detail/led_tracker__type_support.hpp"
+  "rosidl_generator_cpp/intro_interfaces/srv/detail/slow_led_toggle__builder.hpp"
+  "rosidl_generator_cpp/intro_interfaces/srv/detail/slow_led_toggle__struct.hpp"
+  "rosidl_generator_cpp/intro_interfaces/srv/detail/slow_led_toggle__traits.hpp"
+  "rosidl_generator_cpp/intro_interfaces/srv/detail/slow_led_toggle__type_support.hpp"
   "rosidl_generator_cpp/intro_interfaces/srv/led_tracker.hpp"
+  "rosidl_generator_cpp/intro_interfaces/srv/slow_led_toggle.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

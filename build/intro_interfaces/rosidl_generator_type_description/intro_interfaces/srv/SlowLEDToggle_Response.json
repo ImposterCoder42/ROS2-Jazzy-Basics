@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "intro_interfaces/srv/SlowLEDToggle_Response",
+      "fields": [
+        {
+          "name": "res",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "intro_interfaces/srv/SlowLEDToggle_Response",
+      "hash_string": "RIHS01_715d0ddde714d35838c86465c90f88c949dcaae2dfdd2d6285616219a1fc5eb0"
+    }
+  ]
+}

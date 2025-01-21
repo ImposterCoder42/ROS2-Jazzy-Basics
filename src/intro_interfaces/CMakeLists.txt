@@ -14,6 +14,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/LEDState.msg"
   "srv/LEDTracker.srv"
+  "srv/SlowLEDToggle.srv"
   "action/ToggleLED.action"
 )
 

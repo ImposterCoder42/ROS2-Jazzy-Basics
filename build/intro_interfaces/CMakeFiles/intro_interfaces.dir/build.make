@@ -68,6 +68,7 @@ include CMakeFiles/intro_interfaces.dir/progress.make
 
 CMakeFiles/intro_interfaces: /home/optimus/first_ros2_ws/src/intro_interfaces/msg/LEDState.msg
 CMakeFiles/intro_interfaces: /home/optimus/first_ros2_ws/src/intro_interfaces/srv/LEDTracker.srv
+CMakeFiles/intro_interfaces: /home/optimus/first_ros2_ws/src/intro_interfaces/srv/SlowLEDToggle.srv
 CMakeFiles/intro_interfaces: /home/optimus/first_ros2_ws/src/intro_interfaces/action/ToggleLED.action
 CMakeFiles/intro_interfaces: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 CMakeFiles/intro_interfaces: /opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl

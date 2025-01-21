@@ -10,3 +10,4 @@ intro_interfaces/msg/__init__.py
 intro_interfaces/msg/_led_state.py
 intro_interfaces/srv/__init__.py
 intro_interfaces/srv/_led_tracker.py
+intro_interfaces/srv/_slow_led_toggle.py

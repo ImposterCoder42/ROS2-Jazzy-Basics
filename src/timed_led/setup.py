@@ -26,6 +26,7 @@ setup(
             'client_led_tracker = timed_led.client_led_tracker:main',
             'led_action_server = timed_led.led_action_server:main',
             'led_action_client = timed_led.led_action_client:main',
+            'ps4_controller = timed_led.ps4_controller:main',
         ],
     },
 )
