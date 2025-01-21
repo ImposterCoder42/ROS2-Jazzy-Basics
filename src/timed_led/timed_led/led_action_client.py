@@ -16,7 +16,7 @@ class LEDActionClient(Node):
         goal_msg.state = new_led_state
 
         self._action_client.wait_for_server()
-        self._send_goal_future = self._action_client.send_goal_async(goal_msg)
+        self._send_goal_future = self._action_client.send_goal_async(goal_msg, feedback_callback=self.feedback_cb)
         self._send_goal_future.add_done_callback(self.goal_response_callback)
     
     def goal_response_callback(self, future):
@@ -31,13 +31,17 @@ class LEDActionClient(Node):
 
     def get_result_callback(self, future):
         result = future.result().result
-        self.get_logger().info(f'Results: {result.is_complete}')
+        self.get_logger().info(f'Results: {result.is_complete} // JOB COMPLETE!')
     
     def switch_led_state_callback(self, req,res):
         state = req.req
         self.send_goal(state)
         res.res = True
         return res
+
+    def feedback_cb(self, feedback_msg):
+        feedback = feedback_msg.feedback
+        self.get_logger().info(f'LED is {feedback.current_duty_cycle}% on..')
 
 
 # Create Main

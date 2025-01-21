@@ -23,7 +23,6 @@ class LEDActionServer(Node):
         super().__init__('led_action_server')
         self.action_server_ = ActionServer(self, ToggleLED, 'led_action', self.exec_cb)
         self.current_duty_cycle = 0 
-        self.current_led_state = False 
     
     def exec_cb(self, goal_handle):
         self.get_logger().info(f'executing goal..{self.current_duty_cycle}')
@@ -32,12 +31,12 @@ class LEDActionServer(Node):
         
 
         for i in range(1,101):
-            if goal_handle.request.state and not self.current_led_state:
+            if goal_handle.request.state:
                 self.current_duty_cycle = self.current_duty_cycle + 1
-            elif not goal_handle.request.state and self.current_led_state:
+            elif not goal_handle.request.state:
                 self.current_duty_cycle = self.current_duty_cycle - 1
             else:
-                self.get_logger().warn("Can not set the LED to the same state..")
+                self.get_logger().warn("Data Type Error: New state must come in the form of a boolean..")
                 break
             slow_toggle_led_p.ChangeDutyCycle(self.current_duty_cycle)
             feedback_msg.current_duty_cycle = self.current_duty_cycle
