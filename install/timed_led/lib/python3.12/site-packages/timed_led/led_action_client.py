@@ -4,6 +4,8 @@ from rclpy.node import Node
 
 from intro_interfaces.action import ToggleLED
 
+from time import sleep
+
 class LEDActionClient(Node):
     def __init__(self):
         super().__init__('led_action_client')
@@ -36,10 +38,14 @@ class LEDActionClient(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = LEDActionClient()
-
+    
     node.send_goal(True)
+    node.send_goal(False)
+    node.send_goal(True)
+    node.send_goal(False)
 
     rclpy.spin(node)
+
 
     node.destroy_node()
     rclpy.shutdown()

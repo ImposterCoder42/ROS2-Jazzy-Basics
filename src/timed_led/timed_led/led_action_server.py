@@ -4,9 +4,19 @@ from rclpy.node import Node
 
 from intro_interfaces.action import ToggleLED
 
+import RPi.GPIO as GPIO
 from time import sleep
 
+slow_toggle_led = 15
 
+def setup():
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(slow_toggle_led, GPIO.OUT)
+
+    global slow_toggle_led_p
+
+    slow_toggle_led_p = GPIO.PWM(slow_toggle_led, 1000)
+    slow_toggle_led_p.start(0)
 
 class LEDActionServer(Node):
     def __init__(self):
@@ -29,10 +39,11 @@ class LEDActionServer(Node):
             else:
                 self.get_logger().warn("Can not set the LED to the same state..")
                 break
+            slow_toggle_led_p.ChangeDutyCycle(self.current_duty_cycle)
             feedback_msg.current_duty_cycle = self.current_duty_cycle
             self.get_logger().info(f'Current Duty Cycle: {feedback_msg.current_duty_cycle}')
             goal_handle.publish_feedback(feedback_msg)
-            sleep(.1)
+            sleep(.3)
         
         self.current_led_state = goal_handle.request.state
 
@@ -46,14 +57,17 @@ class LEDActionServer(Node):
 
 # Create Main
 def main(args=None):
-    rclpy.init(args=args)
-    node = LEDActionServer()
+    setup()
+    try:
+        rclpy.init(args=args)
+        node = LEDActionServer()
 
-    rclpy.spin(node)
+        rclpy.spin(node)
 
-    node.destroy_node()
-    rclpy.shutdown()
-
+        node.destroy_node()
+        rclpy.shutdown()
+    except KeyboardInterrupt:
+        GPIO.cleanup()
 
 # Execute
 if __name__ == "__main__":

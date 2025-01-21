@@ -13,7 +13,7 @@ class ServiceLEDTracker(Node):
 
     def track_total_sys_blinks(self,req,res):
         if not req.led_state:
-            if req.num_of_sys_blinks % 10 == 0:
+            if req.num_of_sys_blinks % 5 == 0:
                 self.total_sys_cycles += 1
                 res.num_of_cycles_completed = self.total_sys_cycles
                 res.is_total_blinks_in_series_of_ten = True

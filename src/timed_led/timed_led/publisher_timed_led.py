@@ -12,7 +12,7 @@ class PublisherTimedLED(Node):
         self.publisher_  = self.create_publisher(LEDState, 'timed_led', 10)
         self.led_state_msg = 'off'
         self.led_state = False
-        self.create_timer(1.0, self.toggle_led_status)
+        self.create_timer(0.7, self.toggle_led_status)
 
     def toggle_led_status(self):
         msg = LEDState()
