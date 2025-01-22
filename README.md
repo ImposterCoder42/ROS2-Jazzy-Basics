@@ -48,6 +48,7 @@ The reason for using Ubuntu 24.04 is because this is the recomended O.S. for ROS
 
 Installing ROS is rather simple, but there are a lot of commands needed to properly set it up.  The first link is the installation guide, just follow the steps, running every command.  At this point ROS would work fine, but it would be less than convenient.  Following the first link will be some additional commands and links with more information.
 - [ROS2 Installation](https://github.com/ArturSpirin/pyPS4Controller/)
+- Add the Workspace - ```$ echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc```
 - [Add ROS to .bashrc](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html) - ```$ echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc```
 - [Install Colcon](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html) - ```$ sudo apt install python3-colcon-common-extensions```
 - [Colcon AutoComplete](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html) - ```$ echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc```
@@ -55,13 +56,13 @@ Installing ROS is rather simple, but there are a lot of commands needed to prope
 ---
 ## **Give User Root Access to GPIO**
 By default Ubuntu doesn't grant access of the GPIO pins to the User.  To give the User access, create a new member group for the GPIO, add the User, and restart apache2, in short.
-- ```$ sudo groupadd gpio```
-- ```$ sudo usermod -a -G gpio <<user_name>>```
-- ```$ sudo grep gpio /etc/group```
-- ```$ sudo chown root:gpio /dev/gpiomem```
-- ```$ sudo chmod g+rw /dev/gpiomem```
-- ```$ sudo service apache2 restart```
+1. ```$ sudo groupadd gpio```
+2. ```$ sudo usermod -a -G gpio <<user_name>>```
+3. ```$ sudo grep gpio /etc/group```
+4. ```$ sudo chown root:gpio /dev/gpiomem```
+5. ```$ sudo chmod g+rw /dev/gpiomem```
+6. ```$ sudo service apache2 restart```
 
-If you shutdown the Pi and on restart you lose access to the GPIO you should only need to run the last command to restart apache2.
+If you shutdown the Pi and on restart you lose access to the GPIO you need to run steps 2-5 to regain access.
 
 ***<h1 style="text-align:center;">Happy Coding!</h1>***
