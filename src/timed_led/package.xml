@@ -8,6 +8,7 @@
   <license>Apache-2.0</license>
 
   <exec_depend>rclpy</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
   <depend>into_interfaces</depend>
 
   <test_depend>ament_copyright</test_depend>
