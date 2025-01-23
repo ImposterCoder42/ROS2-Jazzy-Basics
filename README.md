@@ -1,6 +1,6 @@
 # Worlds Most Complicated Blinking LED Pi Project
 ---
-Hello World! This project is to server as a starting point for working with ROS2 Jazzy on a Raspberry Pi. It can be used a reference for building future projects.  Using ROS's basic Nodes (publishers, subscribers, servers, clients, actions) and custom interfaces, this must be one of the worlds most complex "Blinking LED" project.
+Hello World! This project is to serve as a starting point for working with ROS2 Jazzy on a Raspberry Pi. It can be used a reference for building future projects.  Using ROS's basic Nodes (publishers, subscribers, servers, clients, actions) and custom interfaces, this must be one of the worlds most complex "Blinking LED" project.
 
 [Short Video Demo](https://youtube.com/shorts/V9wCvEa0f0w?feature=share)
 
@@ -72,5 +72,8 @@ By default Ubuntu doesn't grant access of the GPIO pins to the User.  To give th
 6. ```$ sudo service apache2 restart```
 
 If you shutdown the Pi and on restart you lose access to the GPIO you need to run steps 2-5 to regain access.
+
+To Launch project:
+```$ ros2 launch timed_led main_launch._launch.xml```
 
 ***<h1 style="text-align:center;">Happy Coding!</h1>***
