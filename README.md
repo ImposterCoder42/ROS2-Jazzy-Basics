@@ -2,6 +2,10 @@
 ---
 Hello World! This project is to server as a starting point for working with ROS2 Jazzy on a Raspberry Pi. It can be used a reference for building future projects.  Using ROS's basic Nodes (publishers, subscribers, servers, clients, actions) and custom interfaces, this must be one of the worlds most complex "Blinking LED" project.
 
+[Short Video Demo](https://youtube.com/shorts/V9wCvEa0f0w?feature=share)
+
+<img src="./images/20250122_114629.jpg" alt="drawing" style="width:40vw; display:inline;"/>
+
 ---
 ## **THINGS NEEDED**
 - Raspberry (Pi 4 8gb min)
@@ -34,6 +38,8 @@ Host <name-that-shows-in-VS-Code>
 - Click blue btn bottom left / Connect to host / name-that-shows-in-VS-Code
 - - Type in Pis Passwords
 
+<img src="./images/20250122_114636.jpg" alt="drawing" style="width:40vw; display:inline;"/>
+
 ---
 ## **Install Needed Libraries**
 #### **PIPX, RPi.GPIO, pyPS4controller,git, ROS2 Jazzy**
@@ -52,6 +58,8 @@ Installing ROS is rather simple, but there are a lot of commands needed to prope
 - [Add ROS to .bashrc](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html) - ```$ echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc```
 - [Install Colcon](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html) - ```$ sudo apt install python3-colcon-common-extensions```
 - [Colcon AutoComplete](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html) - ```$ echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc```
+
+<img src="./images/20250122_114713.jpg" alt="drawing" style="width:40vw; display:inline;"/>
 
 ---
 ## **Give User Root Access to GPIO**
