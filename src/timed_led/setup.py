@@ -30,6 +30,7 @@ setup(
             'led_action_server = timed_led.led_action_server:main',
             'led_action_client = timed_led.led_action_client:main',
             'ps4_controller = timed_led.ps4_controller:main',
+            'camera_node = timed_led.camera_node:main',
         ],
     },
 )

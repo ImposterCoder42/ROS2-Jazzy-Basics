@@ -1,4 +1,5 @@
 [console_scripts]
+camera_node = timed_led.camera_node:main
 client_led_tracker = timed_led.client_led_tracker:main
 led_action_client = timed_led.led_action_client:main
 led_action_server = timed_led.led_action_server:main
