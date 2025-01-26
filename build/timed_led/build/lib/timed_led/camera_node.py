@@ -16,8 +16,8 @@ class Camera_Node(Node):
             frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             frame_gray = cv2.equalizeHist(frame_gray)
             frame_gray = cv2.rotate(frame_gray, cv2.ROTATE_180)
-            self.get_logger().info(f'{frame}')
             cv2.imshow('Optimus Eye', frame_gray)
+            cv2.waitKey(1)
     
     def destroy_eye(self):
         self.camera_.release()

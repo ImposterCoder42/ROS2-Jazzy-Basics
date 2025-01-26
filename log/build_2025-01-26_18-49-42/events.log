@@ -1,0 +1,373 @@
+[0.000000] (-) TimerEvent: {}
+[0.000994] (intro_interfaces) JobQueued: {'identifier': 'intro_interfaces', 'dependencies': OrderedDict()}
+[0.001883] (timed_led) JobQueued: {'identifier': 'timed_led', 'dependencies': OrderedDict()}
+[0.001979] (intro_interfaces) JobStarted: {'identifier': 'intro_interfaces'}
+[0.032815] (timed_led) JobStarted: {'identifier': 'timed_led'}
+[0.068078] (intro_interfaces) JobProgress: {'identifier': 'intro_interfaces', 'progress': 'cmake'}
+[0.071646] (intro_interfaces) JobProgress: {'identifier': 'intro_interfaces', 'progress': 'build'}
+[0.074269] (intro_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/optimus/first_ros2_ws/build/intro_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/optimus/first_ros2_ws/build/intro_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'optimus', 'SSH_CLIENT': '192.168.1.187 53035 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/helpers/browser.sh', 'HOME': '/home/optimus', 'OLDPWD': '/home/optimus', 'TERM_PROGRAM_VERSION': '1.96.4', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-26e9f439-a268-4f60-b97b-676021ab5dea.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/optimus/first_ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'optimus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cbfb603949.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/timed_led:/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/optimus/first_ros2_ws/build/intro_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.187 53035 192.168.1.48 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/optimus/first_ros2_ws/install/timed_led:/opt/ros/jazzy'}), 'shell': False}
+[0.099244] (-) TimerEvent: {}
+[0.199992] (-) TimerEvent: {}
+[0.300757] (-) TimerEvent: {}
+[0.402948] (intro_interfaces) StdoutLine: {'line': b'[  1%] Built target intro_interfaces__rosidl_generator_type_description\n'}
+[0.403909] (-) TimerEvent: {}
+[0.495446] (intro_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_intro_interfaces\n'}
+[0.507232] (-) TimerEvent: {}
+[0.564147] (intro_interfaces) StdoutLine: {'line': b'[  3%] Built target intro_interfaces__cpp\n'}
+[0.588485] (intro_interfaces) StdoutLine: {'line': b'[ 25%] Built target intro_interfaces__rosidl_generator_c\n'}
+[0.607614] (-) TimerEvent: {}
+[0.710982] (-) TimerEvent: {}
+[0.814564] (-) TimerEvent: {}
+[0.835844] (intro_interfaces) StdoutLine: {'line': b'[ 34%] Built target intro_interfaces__rosidl_typesupport_c\n'}
+[0.837314] (intro_interfaces) StdoutLine: {'line': b'[ 43%] Built target intro_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.867200] (intro_interfaces) StdoutLine: {'line': b'[ 53%] Built target intro_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.919196] (-) TimerEvent: {}
+[1.019951] (-) TimerEvent: {}
+[1.066233] (intro_interfaces) StdoutLine: {'line': b'[ 62%] Built target intro_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[1.082223] (intro_interfaces) StdoutLine: {'line': b'[ 71%] Built target intro_interfaces__rosidl_typesupport_cpp\n'}
+[1.102468] (intro_interfaces) StdoutLine: {'line': b'[ 81%] Built target intro_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[1.120256] (-) TimerEvent: {}
+[1.221073] (-) TimerEvent: {}
+[1.253982] (intro_interfaces) StdoutLine: {'line': b'[ 81%] Built target intro_interfaces\n'}
+[1.321217] (-) TimerEvent: {}
+[1.411868] (intro_interfaces) StdoutLine: {'line': b'[ 82%] Built target intro_interfaces__py\n'}
+[1.421386] (-) TimerEvent: {}
+[1.522565] (-) TimerEvent: {}
+[1.601865] (intro_interfaces) StdoutLine: {'line': b'[ 90%] Built target intro_interfaces__rosidl_generator_py\n'}
+[1.622910] (-) TimerEvent: {}
+[1.726229] (-) TimerEvent: {}
+[1.827284] (-) TimerEvent: {}
+[1.848154] (intro_interfaces) StdoutLine: {'line': b'[ 93%] Built target intro_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[1.890504] (intro_interfaces) StdoutLine: {'line': b'[ 96%] Built target intro_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[1.920571] (intro_interfaces) StdoutLine: {'line': b'[100%] Built target intro_interfaces_s__rosidl_typesupport_c\n'}
+[1.927467] (-) TimerEvent: {}
+[2.031299] (-) TimerEvent: {}
+[2.133715] (-) TimerEvent: {}
+[2.236707] (-) TimerEvent: {}
+[2.340725] (-) TimerEvent: {}
+[2.392658] (intro_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.441581] (-) TimerEvent: {}
+[2.542990] (-) TimerEvent: {}
+[2.646156] (-) TimerEvent: {}
+[2.665117] (intro_interfaces) StdoutLine: {'line': b'writing intro_interfaces.egg-info/PKG-INFO\n'}
+[2.668200] (intro_interfaces) StdoutLine: {'line': b'writing dependency_links to intro_interfaces.egg-info/dependency_links.txt\n'}
+[2.670969] (intro_interfaces) StdoutLine: {'line': b'writing top-level names to intro_interfaces.egg-info/top_level.txt\n'}
+[2.747210] (-) TimerEvent: {}
+[2.850608] (-) TimerEvent: {}
+[2.951338] (-) TimerEvent: {}
+[3.052061] (-) TimerEvent: {}
+[3.133583] (intro_interfaces) StdoutLine: {'line': b"reading manifest file 'intro_interfaces.egg-info/SOURCES.txt'\n"}
+[3.136761] (intro_interfaces) StdoutLine: {'line': b"writing manifest file 'intro_interfaces.egg-info/SOURCES.txt'\n"}
+[3.152299] (-) TimerEvent: {}
+[3.253341] (-) TimerEvent: {}
+[3.312794] (intro_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_intro_interfaces_egg\n'}
+[3.353520] (-) TimerEvent: {}
+[3.383348] (intro_interfaces) CommandEnded: {'returncode': 0}
+[3.385961] (intro_interfaces) JobProgress: {'identifier': 'intro_interfaces', 'progress': 'install'}
+[3.434604] (intro_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/optimus/first_ros2_ws/build/intro_interfaces'], 'cwd': '/home/optimus/first_ros2_ws/build/intro_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'optimus', 'SSH_CLIENT': '192.168.1.187 53035 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/helpers/browser.sh', 'HOME': '/home/optimus', 'OLDPWD': '/home/optimus', 'TERM_PROGRAM_VERSION': '1.96.4', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-26e9f439-a268-4f60-b97b-676021ab5dea.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/optimus/first_ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'optimus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cbfb603949.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/timed_led:/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/optimus/first_ros2_ws/build/intro_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.187 53035 192.168.1.48 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/optimus/first_ros2_ws/install/timed_led:/opt/ros/jazzy'}), 'shell': False}
+[3.453706] (-) TimerEvent: {}
+[3.486249] (intro_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.488270] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/ament_index/resource_index/rosidl_interfaces/intro_interfaces\n'}
+[3.489238] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/msg/LEDState.json\n'}
+[3.489773] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/LEDTracker.json\n'}
+[3.490277] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/SlowLEDToggle.json\n'}
+[3.491393] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/action/ToggleLED.json\n'}
+[3.491994] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[3.492541] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[3.493106] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/led_tracker.h\n'}
+[3.493599] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[3.494267] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__functions.c\n'}
+[3.495989] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__description.c\n'}
+[3.496900] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__description.c\n'}
+[3.497528] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__functions.c\n'}
+[3.498731] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__struct.h\n'}
+[3.499936] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__type_support.h\n'}
+[3.500780] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__type_support.c\n'}
+[3.501476] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__struct.h\n'}
+[3.502096] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__type_support.h\n'}
+[3.503550] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__functions.h\n'}
+[3.504665] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__type_support.c\n'}
+[3.505580] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__functions.h\n'}
+[3.506539] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/slow_led_toggle.h\n'}
+[3.507082] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[3.508368] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/led_state.h\n'}
+[3.509331] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.510407] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[3.510880] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__type_support.c\n'}
+[3.511697] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__description.c\n'}
+[3.512336] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__functions.c\n'}
+[3.512837] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__type_support.h\n'}
+[3.513331] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__struct.h\n'}
+[3.513777] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__functions.h\n'}
+[3.514580] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[3.515017] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[3.516625] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__type_support.h\n'}
+[3.517616] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__type_support.c\n'}
+[3.518390] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__functions.c\n'}
+[3.518876] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__struct.h\n'}
+[3.519833] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__description.c\n'}
+[3.520456] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__functions.h\n'}
+[3.521355] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/toggle_led.h\n'}
+[3.522463] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/library_path.sh\n'}
+[3.523679] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/library_path.dsv\n'}
+[3.524341] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_generator_c.so\n'}
+[3.524886] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[3.525753] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[3.526445] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[3.527470] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__rosidl_typesupport_fastrtps_c.h\n'}
+[3.528549] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__rosidl_typesupport_fastrtps_c.h\n'}
+[3.529168] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[3.529747] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[3.530970] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__rosidl_typesupport_fastrtps_c.h\n'}
+[3.532075] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.533196] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[3.533756] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[3.534491] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__rosidl_typesupport_fastrtps_c.h\n'}
+[3.535958] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[3.537020] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[3.537608] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[3.539097] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[3.540372] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__rosidl_typesupport_introspection_c.h\n'}
+[3.540857] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__type_support.c\n'}
+[3.541777] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__type_support.c\n'}
+[3.542394] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__rosidl_typesupport_introspection_c.h\n'}
+[3.543291] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[3.543816] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[3.544331] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__type_support.c\n'}
+[3.544847] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__rosidl_typesupport_introspection_c.h\n'}
+[3.546189] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.547489] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[3.548474] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[3.549374] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__rosidl_typesupport_introspection_c.h\n'}
+[3.550327] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__type_support.c\n'}
+[3.551164] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[3.551873] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_c.so\n'}
+[3.553090] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[3.554397] (-) TimerEvent: {}
+[3.555172] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[3.556203] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/slow_led_toggle.hpp\n'}
+[3.556957] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[3.557816] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__traits.hpp\n'}
+[3.558559] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__type_support.hpp\n'}
+[3.559375] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__struct.hpp\n'}
+[3.559918] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__builder.hpp\n'}
+[3.560779] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__type_support.hpp\n'}
+[3.561505] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__traits.hpp\n'}
+[3.562146] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__builder.hpp\n'}
+[3.562636] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__struct.hpp\n'}
+[3.563479] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/led_tracker.hpp\n'}
+[3.564985] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[3.565760] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.566305] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/led_state.hpp\n'}
+[3.568058] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[3.568782] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__struct.hpp\n'}
+[3.569437] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__type_support.hpp\n'}
+[3.569899] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__builder.hpp\n'}
+[3.570858] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__traits.hpp\n'}
+[3.571540] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[3.572188] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/toggle_led.hpp\n'}
+[3.572819] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[3.573551] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__type_support.hpp\n'}
+[3.573984] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__builder.hpp\n'}
+[3.574701] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__struct.hpp\n'}
+[3.575166] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__traits.hpp\n'}
+[3.575674] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[3.576064] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[3.576614] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[3.577022] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.577724] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/dds_fastrtps\n'}
+[3.578241] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.578862] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[3.579679] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.580270] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[3.581512] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/dds_fastrtps\n'}
+[3.582683] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.583385] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[3.585020] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[3.585713] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.586322] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/dds_fastrtps\n'}
+[3.586985] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.587547] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces\n'}
+[3.587986] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv\n'}
+[3.588648] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail\n'}
+[3.589153] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.589664] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/led_tracker__type_support.cpp\n'}
+[3.590353] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__type_support.cpp\n'}
+[3.590975] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/srv/detail/slow_led_toggle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.591480] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg\n'}
+[3.592105] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail\n'}
+[3.592622] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.593138] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/msg/detail/led_state__type_support.cpp\n'}
+[3.593787] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action\n'}
+[3.594534] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail\n'}
+[3.595166] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.595735] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/include/intro_interfaces/intro_interfaces/action/detail/toggle_led__type_support.cpp\n'}
+[3.596444] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[3.597078] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_typesupport_cpp.so\n'}
+[3.597690] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/pythonpath.sh\n'}
+[3.598201] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/pythonpath.dsv\n'}
+[3.598851] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces-0.0.0-py3.12.egg-info\n'}
+[3.599824] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[3.600511] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[3.601143] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[3.601746] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[3.602371] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces\n'}
+[3.603231] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv\n'}
+[3.603862] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/_led_tracker_s.c\n'}
+[3.604553] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/_led_tracker.py\n'}
+[3.605066] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/_slow_led_toggle_s.c\n'}
+[3.605620] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/__init__.py\n'}
+[3.606100] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv/_slow_led_toggle.py\n'}
+[3.607396] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg\n'}
+[3.608771] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg/__init__.py\n'}
+[3.609911] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg/_led_state.py\n'}
+[3.611433] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg/_led_state_s.c\n'}
+[3.612214] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.612782] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[3.613382] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action\n'}
+[3.613808] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action/__init__.py\n'}
+[3.614327] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action/_toggle_led_s.c\n'}
+[3.614785] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action/_toggle_led.py\n'}
+[3.615473] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/__init__.py\n'}
+[3.615989] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_c.so\n'}
+[3.616600] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[3.617160] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.617729] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/_intro_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.655897] (-) TimerEvent: {}
+[3.756659] (-) TimerEvent: {}
+[3.797733] (intro_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces'...\n"}
+[3.800083] (intro_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/action'...\n"}
+[3.802180] (intro_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/msg'...\n"}
+[3.803809] (intro_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/srv'...\n"}
+[3.833971] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.837056] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[3.839012] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages/intro_interfaces/intro_interfaces_s__rosidl_typesupport_c.so\n'}
+[3.841477] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/lib/libintro_interfaces__rosidl_generator_py.so\n'}
+[3.842955] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/msg/LEDState.idl\n'}
+[3.845020] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/LEDTracker.idl\n'}
+[3.845643] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/SlowLEDToggle.idl\n'}
+[3.846115] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/action/ToggleLED.idl\n'}
+[3.846581] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/msg/LEDState.msg\n'}
+[3.846994] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/LEDTracker.srv\n'}
+[3.847921] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/srv/SlowLEDToggle.srv\n'}
+[3.848538] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/action/ToggleLED.action\n'}
+[3.848971] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/ament_index/resource_index/package_run_dependencies/intro_interfaces\n'}
+[3.849456] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/ament_index/resource_index/parent_prefix_path/intro_interfaces\n'}
+[3.849876] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/ament_prefix_path.sh\n'}
+[3.850356] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/ament_prefix_path.dsv\n'}
+[3.850782] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/path.sh\n'}
+[3.851775] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/environment/path.dsv\n'}
+[3.852545] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/local_setup.bash\n'}
+[3.853617] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/local_setup.sh\n'}
+[3.854673] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/local_setup.zsh\n'}
+[3.855749] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/local_setup.dsv\n'}
+[3.856647] (-) TimerEvent: {}
+[3.857275] (intro_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/package.dsv\n'}
+[3.858517] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/ament_index/resource_index/packages/intro_interfaces\n'}
+[3.859510] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_generator_cExport.cmake\n'}
+[3.860260] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.861358] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.862327] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.863469] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.864216] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.865318] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[3.866781] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.868863] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_generator_cppExport.cmake\n'}
+[3.870256] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.871482] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.872243] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.872970] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.873571] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[3.874535] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.875248] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_generator_pyExport.cmake\n'}
+[3.875932] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/export_intro_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.876522] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[3.877100] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.877745] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.878491] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.879495] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.880011] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.880643] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.881125] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfacesConfig.cmake\n'}
+[3.881980] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/cmake/intro_interfacesConfig-version.cmake\n'}
+[3.883484] (intro_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/first_ros2_ws/install/intro_interfaces/share/intro_interfaces/package.xml\n'}
+[3.885599] (intro_interfaces) CommandEnded: {'returncode': 0}
+[3.960138] (-) TimerEvent: {}
+[4.042716] (intro_interfaces) JobEnded: {'identifier': 'intro_interfaces', 'rc': 0}
+[4.060285] (-) TimerEvent: {}
+[4.161077] (-) TimerEvent: {}
+[4.261837] (-) TimerEvent: {}
+[4.362526] (-) TimerEvent: {}
+[4.463146] (-) TimerEvent: {}
+[4.563730] (-) TimerEvent: {}
+[4.664363] (-) TimerEvent: {}
+[4.770009] (-) TimerEvent: {}
+[4.871102] (-) TimerEvent: {}
+[4.971704] (-) TimerEvent: {}
+[5.072336] (-) TimerEvent: {}
+[5.172959] (-) TimerEvent: {}
+[5.273646] (-) TimerEvent: {}
+[5.374408] (-) TimerEvent: {}
+[5.475513] (-) TimerEvent: {}
+[5.548189] (timed_led) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/timed_led', 'build', '--build-base', '/home/optimus/first_ros2_ws/build/timed_led/build', 'install', '--record', '/home/optimus/first_ros2_ws/build/timed_led/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/optimus/first_ros2_ws/src/timed_led', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'optimus', 'SSH_CLIENT': '192.168.1.187 53035 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/helpers/browser.sh', 'HOME': '/home/optimus', 'OLDPWD': '/home/optimus', 'TERM_PROGRAM_VERSION': '1.96.4', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-26e9f439-a268-4f60-b97b-676021ab5dea.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/optimus/first_ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'optimus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/optimus/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cbfb603949.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/timed_led:/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/optimus/first_ros2_ws/build/timed_led', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.187 53035 192.168.1.48 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/optimus/first_ros2_ws/build/timed_led/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages:/home/optimus/first_ros2_ws/install/intro_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/optimus/first_ros2_ws/install/intro_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[5.575657] (-) TimerEvent: {}
+[5.676328] (-) TimerEvent: {}
+[5.777127] (-) TimerEvent: {}
+[5.877722] (-) TimerEvent: {}
+[5.978359] (-) TimerEvent: {}
+[6.078957] (-) TimerEvent: {}
+[6.179570] (-) TimerEvent: {}
+[6.280141] (-) TimerEvent: {}
+[6.380731] (-) TimerEvent: {}
+[6.481386] (-) TimerEvent: {}
+[6.581959] (-) TimerEvent: {}
+[6.682586] (-) TimerEvent: {}
+[6.783166] (-) TimerEvent: {}
+[6.841118] (timed_led) StdoutLine: {'line': b'running egg_info\n'}
+[6.883317] (-) TimerEvent: {}
+[6.940087] (timed_led) StdoutLine: {'line': b'writing ../../build/timed_led/timed_led.egg-info/PKG-INFO\n'}
+[6.941385] (timed_led) StdoutLine: {'line': b'writing dependency_links to ../../build/timed_led/timed_led.egg-info/dependency_links.txt\n'}
+[6.943114] (timed_led) StdoutLine: {'line': b'writing entry points to ../../build/timed_led/timed_led.egg-info/entry_points.txt\n'}
+[6.943974] (timed_led) StdoutLine: {'line': b'writing requirements to ../../build/timed_led/timed_led.egg-info/requires.txt\n'}
+[6.944770] (timed_led) StdoutLine: {'line': b'writing top-level names to ../../build/timed_led/timed_led.egg-info/top_level.txt\n'}
+[6.983480] (-) TimerEvent: {}
+[7.084130] (-) TimerEvent: {}
+[7.147338] (timed_led) StdoutLine: {'line': b"reading manifest file '../../build/timed_led/timed_led.egg-info/SOURCES.txt'\n"}
+[7.149206] (timed_led) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[7.151758] (timed_led) StdoutLine: {'line': b"writing manifest file '../../build/timed_led/timed_led.egg-info/SOURCES.txt'\n"}
+[7.152542] (timed_led) StdoutLine: {'line': b'running build\n'}
+[7.153090] (timed_led) StdoutLine: {'line': b'running build_py\n'}
+[7.155341] (timed_led) StdoutLine: {'line': b'copying timed_led/camera_node.py -> /home/optimus/first_ros2_ws/build/timed_led/build/lib/timed_led\n'}
+[7.157063] (timed_led) StdoutLine: {'line': b'running install\n'}
+[7.182107] (timed_led) StdoutLine: {'line': b'running install_lib\n'}
+[7.184249] (-) TimerEvent: {}
+[7.284783] (-) TimerEvent: {}
+[7.285808] (timed_led) StdoutLine: {'line': b'copying /home/optimus/first_ros2_ws/build/timed_led/build/lib/timed_led/camera_node.py -> /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led\n'}
+[7.289755] (timed_led) StdoutLine: {'line': b'byte-compiling /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led/camera_node.py to camera_node.cpython-312.pyc\n'}
+[7.293361] (timed_led) StdoutLine: {'line': b'running install_data\n'}
+[7.294435] (timed_led) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.384929] (-) TimerEvent: {}
+[7.398622] (timed_led) StdoutLine: {'line': b"removing '/home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[7.400448] (timed_led) StdoutLine: {'line': b'Copying ../../build/timed_led/timed_led.egg-info to /home/optimus/first_ros2_ws/install/timed_led/lib/python3.12/site-packages/timed_led-0.0.0-py3.12.egg-info\n'}
+[7.408804] (timed_led) StdoutLine: {'line': b'running install_scripts\n'}
+[7.485112] (-) TimerEvent: {}
+[7.585686] (-) TimerEvent: {}
+[7.686691] (-) TimerEvent: {}
+[7.787390] (-) TimerEvent: {}
+[7.887987] (-) TimerEvent: {}
+[7.988699] (-) TimerEvent: {}
+[8.089435] (-) TimerEvent: {}
+[8.142218] (timed_led) StdoutLine: {'line': b'Installing camera_node script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[8.143151] (timed_led) StdoutLine: {'line': b'Installing client_led_tracker script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[8.144229] (timed_led) StdoutLine: {'line': b'Installing led_action_client script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[8.145150] (timed_led) StdoutLine: {'line': b'Installing led_action_server script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[8.146129] (timed_led) StdoutLine: {'line': b'Installing led_timer script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[8.147064] (timed_led) StdoutLine: {'line': b'Installing ps4_controller script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[8.147980] (timed_led) StdoutLine: {'line': b'Installing server_led_tracker script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[8.148924] (timed_led) StdoutLine: {'line': b'Installing timed_led script to /home/optimus/first_ros2_ws/install/timed_led/lib/timed_led\n'}
+[8.151857] (timed_led) StdoutLine: {'line': b"writing list of installed files to '/home/optimus/first_ros2_ws/build/timed_led/install.log'\n"}
+[8.189678] (-) TimerEvent: {}
+[8.290647] (-) TimerEvent: {}
+[8.300658] (timed_led) CommandEnded: {'returncode': 0}
+[8.331811] (timed_led) JobEnded: {'identifier': 'timed_led', 'rc': 0}
+[8.334853] (-) EventReactorShutdown: {}

@@ -6,4 +6,5 @@
     <node pkg="timed_led" exec="led_action_server" name="led_action_server" />
     <node pkg="timed_led" exec="led_action_client" name="led_action_client" />
     <node pkg="timed_led" exec="ps4_controller" name="ps4_controller" />
+    <node pkg="timed_led" exec="camera_node" name="camera_node" />
 </launch>
