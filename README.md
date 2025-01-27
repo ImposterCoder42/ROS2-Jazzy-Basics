@@ -76,7 +76,8 @@ If you shutdown the Pi and on restart you lose access to the GPIO you need to ru
 
 ---
 ## Set Up PiCam
-Some Libraries may already be installed by default, but just running all these\ steps should eliminate any errors.\
+Some Libraries may already be installed by default, but just running all these\
+steps should eliminate any errors.\
 ```$ sudo apt install libraspberrypi-bin v4l-utils ros-jazzy-v4l2-camera```\
 ```$ sudo apt install ros-jazzy-image-transport-plugins```\
 Next check to see if the user is a member of the video group.\
