@@ -4,7 +4,7 @@ Hello World! This project is to serve as a starting point for working with ROS2 
 
 [Short Video Demo](https://youtube.com/shorts/V9wCvEa0f0w?feature=share)
 
-<img src="./images/20250122_114629.jpg" alt="drawing" style="width:40vw; display:inline;"/>
+<img src="./images/20250122_114629.jpg" alt="drawing" style="width:30vw; display:inline;"/>
 
 ---
 ## **THINGS NEEDED**
@@ -39,7 +39,7 @@ Host <name-that-shows-in-VS-Code>
 - Click blue btn bottom left / Connect to host / name-that-shows-in-VS-Code
 - - Type in Pis Passwords
 
-<img src="./images/20250122_114636.jpg" alt="drawing" style="width:40vw; display:inline;"/>
+<img src="./images/20250122_114636.jpg" alt="drawing" style="width:30vw; display:inline;"/>
 
 ---
 ## **Install Needed Libraries**
@@ -60,7 +60,7 @@ Installing ROS is rather simple, but there are a lot of commands needed to prope
 - [Install Colcon](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html) - ```$ sudo apt install python3-colcon-common-extensions```
 - [Colcon AutoComplete](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html) - ```$ echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc```
 
-<img src="./images/20250122_114713.jpg" alt="drawing" style="width:40vw; display:inline;"/>
+<img src="./images/20250122_114713.jpg" alt="drawing" style="width:30vw; display:inline;"/>
 
 ---
 ## **Give User Root Access to GPIO**
