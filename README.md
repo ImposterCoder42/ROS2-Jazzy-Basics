@@ -15,6 +15,7 @@ Hello World! This project is to serve as a starting point for working with ROS2 
 - 3 LED
 - 3 Resistor
 - PS4 Dualshock Controller
+- PiCamera 2 (Added)
 
 ---
 ## **Setting Up The Pi**
@@ -73,6 +74,38 @@ By default Ubuntu doesn't grant access of the GPIO pins to the User.  To give th
 
 If you shutdown the Pi and on restart you lose access to the GPIO you need to run steps 2-5 to regain access.
 
+---
+## Set Up PiCam
+Some Libraries may already be installed by default, but just running all these steps should eliminate any errors.
+```$ sudo apt install libraspberrypi-bin v4l-utils ros-jazzy-v4l2-camera```
+```$ sudo apt install ros-jazzy-image-transport-plugins```
+Next check to see if the user is a member of the video group.
+```$ groups```
+If video is not in the list:
+```$ sudo usermod -aG video <<username>>```
+```$ sudo reboot now```
+Install Raspi Config
+```$ sudo apt install raspi-config```
+Before opening the Config, be sure the terminal is large enough for a whole menu
+```$ sudo raspi-config```
+Using the arrow pad, navigate into the "4 Interface Options" section
+Inside there enable the Legacy, SPI, and I2C options
+Once done, exit the config menu and reboot when prompt or reboot manually
+
+
+With the camera installed to check if its available
+```$ vcgencmd get_camera```
+output should be ```supported=1 detected=1, libcamera interfaces=0```
+Another test is one terminal run:
+```$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:="[640,480]"```
+In a second terminal:
+```$ ros2 topic echo /image_raw```
+What will be returnd will be a series of a array 
+
+Lastly to use the camera easily install OpenCV
+```$ sudo apt-get install python3-opencv```
+
+---
 To Launch project:
 ```$ ros2 launch timed_led main_launch._launch.xml```
 
