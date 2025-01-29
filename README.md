@@ -34,17 +34,17 @@ Hello World! This project is to serve as a starting point for working with ROS2 
 - ensure ps4 controller works - if not, reinstall 24.04 or install 22.04 then upgrade "sudo do-release-upgrade"
 - ```$ sudo apt install openssh-server```
 - Get IP address ```$ ip a``` and look to the "inet" that comes after BRODCAST
-- On other pc test ```$ ping <ipAddress>``` -> ensures Pi is connected to wifi
+- On working pc test ```$ ping <ipAddress>``` -> ensures Pi is connected to wifi
 - Install OpenSSH server ```$ sudo apt install openssh-server```
 - Open a terminal on the working PC ```$ ssh <PiUsername>@<PiIPAdress>```
-- - If you get an error tyrruning ```$ ssh-keygen -R {ipAddress)```
-- Open VS Code / Click blue btn bottom left /
-- - Connect to host / Configure SSH Hosts / C:Users/name/.ssh/config
+   - If you get an error tyr runing ```$ ssh-keygen -R {ipAddress)```
+- Open VS Code / Click blue btn bottom left 
+   - Connect to host / Configure SSH Hosts / "C:Users/name/.ssh/config"
 - Add this to the file
 ```
-Host <name-that-shows-in-VS-Code>
-   HostName <Pi-Ip-Addres>
-   User <Pi-Name>
+Host <<name-that-shows-in-VS-Code>>
+   HostName <<Pi-Ip-Addres>>
+   User <<Pi-Name>>
 ```
 - Click blue btn bottom left / Connect to host / name-that-shows-in-VS-Code
 - - Type in Pis Passwords
@@ -57,7 +57,7 @@ Host <name-that-shows-in-VS-Code>
 - ```$ sudo apt install pipx``` -- Automatically creates venv / Works like normal pip
 - ```$ sudo pipx install RPi.GPIO``` -- Use just like normal GPIO pins
 - ```$ sudo pipx install pyPS4Controller``` -- [pyPS4Controller Docs](https://github.com/ArturSpirin/pyPS4Controller/)
-- ```$ sudo apt install git-all``` -- This is just git, if you her, you know
+- ```$ sudo apt install git-all``` -- This is just git, if you here, you know
 
 ---
 ## **Install ROS2 Jazzy**
