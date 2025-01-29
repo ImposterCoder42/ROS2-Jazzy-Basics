@@ -20,8 +20,17 @@ Hello World! This project is to serve as a starting point for working with ROS2 
 ---
 ## **Setting Up The Pi**
 - Install ubuntu 24.04 using Pi Imager on microS [Pi Imager Download](https://www.raspberrypi.com/software/)
+- Hook the Pi up to a Keyboard, Mouse, Monitor
+- Turn Pi on, and follow the setup process
 - ```$ sudo apt update && sudo apt upgrade```
+- Open Settings / Sharing
+   - Activate Media Sharing
+- In settings / System / Remote Desktop
+   - Activate Desktop Sharing
+   - Activate Remote Desktop
 - **IMPORTANT** - Check now and make sure PS4 controlle connects to Pi
+- Open Bluetooth settings
+- ensure ps4 controller works - if not, reinstall 24.04 or install 22.04 then upgrade "sudo do-release-upgrade"
 - ```$ sudo apt install openssh-server```
 - Get IP address ```$ ip a``` and look to the "inet" that comes after BRODCAST
 - On other pc test ```$ ping <ipAddress>``` -> ensures Pi is connected to wifi
