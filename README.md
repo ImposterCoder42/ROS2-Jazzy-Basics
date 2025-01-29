@@ -19,7 +19,8 @@ Hello World! This project is to serve as a starting point for working with ROS2 
 
 ---
 ## **Setting Up The Pi**
-- Install ubuntu 24.04 using Pi Imager on microS [Pi Imager Download](https://www.raspberrypi.com/software/)
+- Install ubuntu 24.04 using Pi Imager on microSD [Pi Imager Download](https://www.raspberrypi.com/software/)
+- Insert microSD into Pi
 - Hook the Pi up to a Keyboard, Mouse, Monitor
 - Turn Pi on, and follow the setup process
 - ```$ sudo apt update && sudo apt upgrade```
