@@ -32,12 +32,17 @@ Hello World! This project is to serve as a starting point for working with ROS2 
 - **IMPORTANT** - Check now and make sure PS4 controlle connects to Pi
 - Open Bluetooth settings
 - ensure ps4 controller works - if not, reinstall 24.04 or install 22.04 then upgrade "sudo do-release-upgrade"
-- ```$ sudo apt install openssh-server```
+- Install OpenSSH server ```$ sudo apt install openssh-server```
 - Get IP address ```$ ip a``` and look to the "inet" that comes after BRODCAST
 - On working pc test ```$ ping <ipAddress>``` -> ensures Pi is connected to wifi
-- Install OpenSSH server ```$ sudo apt install openssh-server```
 - Open a terminal on the working PC ```$ ssh <PiUsername>@<PiIPAdress>```
-   - If you get an error tyr runing ```$ ssh-keygen -R {ipAddress)```
+   - If you get an error try runing ```$ ssh-keygen -R {ipAddress)```
+- If on Windows, Open Remote Desktop Connection
+     - On bottom left, click Show Options
+     - For Computer Enter Pi's IP Address
+     - Username enter the username, that was entered when Pi's remote desktop was activated
+     - Click yes, saying you trust the machine you're connecting too
+     - Enter the password, that was entered when Pi's remote desktop was activated
 - Open VS Code / Click blue btn bottom left 
    - Connect to host / Configure SSH Hosts / "C:Users/name/.ssh/config"
 - Add this to the file
