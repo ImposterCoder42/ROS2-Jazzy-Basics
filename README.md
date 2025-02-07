@@ -69,7 +69,7 @@ Host <<name-that-shows-in-VS-Code>>
 The reason for using Ubuntu 24.04 is because this is the recomended O.S. for ROS2 Jazzy. Jazzy is the lastest version of ROS with long term support.
 
 Installing ROS is rather simple, but there are a lot of commands needed to properly set it up.  The first link is the installation guide, just follow the steps, running every command.  At this point ROS would work fine, but it would be less than convenient.  Following the first link will be some additional commands and links with more information.
-- [ROS2 Installation](https://github.com/ArturSpirin/pyPS4Controller/)
+- [ROS2 Installation]([https://github.com/ArturSpirin/pyPS4Controller/](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html))
 - Add the Workspace - ```$ echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc```
 - [Add ROS to .bashrc](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html) - ```$ echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc```
 - [Install Colcon](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html) - ```$ sudo apt install python3-colcon-common-extensions```
